@@ -1,0 +1,119 @@
+/*
+==========================================================================
+	HEADER (scss/partials/_header.scss)
+==========================================================================
+*/
+header.branding {
+	width: 100%;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-align: center;
+	height: 560px;
+	margin: 0 auto;
+	margin-top: 2.2%;
+	background-image: url('../img/unsaturated-buffalo-2000x1000.jpg');
+	background-position-y: 83%;
+	background-size: cover;
+	@media screen and (max-width: 1024px) {
+		height: 400px;
+	}
+	/*@media screen and (max-width: 767px) {
+		height: 370px;
+		margin-top: 40px;
+	}*/
+	@media screen and (max-width: 500px) {
+		height: 200px;
+		margin-top: 44px;
+		border: 1px solid $off-white;
+	}
+}
+header.branding img {
+	margin: 0 auto;
+	margin-top: 80px;
+	width: 75%;
+	@media screen and (max-width: 767px) {
+		width: 70%;
+		margin-top: 46px;
+	}
+
+}
+.branding-wrapper {
+	width: 100%;
+	height: 100%;	
+	background-color: rgba(0,0,0,.3);
+	@media screen and (max-width:767px) {
+		background: rgba(0,0,0,.7);
+/* IE9 SVG, needs conditional override of 'filter' to 'none' *
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyMjIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjMjIyMjIyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTYlIiBzdG9wLWNvbG9yPSIjMjUyNTI1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjglIiBzdG9wLWNvbG9yPSIjMmUyZTJlIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzM0MzQzNCIgc3RvcC1vcGFjaXR5PSIwLjc1Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  rgba(34,34,34,1) 0%, rgba(34,34,34,1) 1%, rgba(37,37,37,1) 16%, rgba(46,46,46,0.75) 68%, rgba(52,52,52,0.75) 100%); /* FF3.6+ *
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,34,34,1)), color-stop(1%,rgba(34,34,34,1)), color-stop(16%,rgba(37,37,37,1)), color-stop(68%,rgba(46,46,46,0.75)), color-stop(100%,rgba(52,52,52,0.75))); /* Chrome,Safari4+ *
+background: -webkit-linear-gradient(top,  rgba(34,34,34,1) 0%,rgba(34,34,34,1) 1%,rgba(37,37,37,1) 16%,rgba(46,46,46,0.75) 68%,rgba(52,52,52,0.75) 100%); /* Chrome10+,Safari5.1+ *
+background: -o-linear-gradient(top,  rgba(34,34,34,1) 0%,rgba(34,34,34,1) 1%,rgba(37,37,37,1) 16%,rgba(46,46,46,0.75) 68%,rgba(52,52,52,0.75) 100%); /* Opera 11.10+ *
+background: -ms-linear-gradient(top,  rgba(34,34,34,1) 0%,rgba(34,34,34,1) 1%,rgba(37,37,37,1) 16%,rgba(46,46,46,0.75) 68%,rgba(52,52,52,0.75) 100%); /* IE10+ *
+background: linear-gradient(to bottom,  rgba(34,34,34,1) 0%,rgba(34,34,34,1) 1%,rgba(37,37,37,1) 16%,rgba(46,46,46,0.75) 68%,rgba(52,52,52,0.75) 100%); /* W3C *
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#bf343434',GradientType=0 ); /* IE6-8 */
+
+		}
+}
+.header-nav {
+	width: 95%;
+	margin: 0 auto;
+	border-bottom: 1px solid $white-10;
+	color: #fff;
+	@include sans-serif;
+	clear: both;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative;
+	left: -13px;
+	text-align: center;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+.header-nav img {
+	max-width: 140px;
+	opacity: 1;
+}
+.header-nav--block {
+	width: 40%;
+}
+.block-left {
+	float: left;
+}
+.block-right {
+	float: right;
+}
+.nav-item {
+	width: 50%;
+	float: left;
+	line-height: 45px;
+	display: inline-block;
+	text-decoration: none;
+	@include sans-serif;
+	font-weight: 400;
+	color: #555;
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 0;
+}
+.nav-item:hover {
+	color: $cyan;
+	transition: all .7s;
+    -webkit-transition: all .7s;
+    cursor: pointer;
+}
+.nav:hover {
+	transition: all .7s;
+    -webkit-transition: all .7s;
+}
+.active {
+	color: $cyan;	
+}
+.header-nav i {
+	line-height: 60px;
+	opacity: .4;
+}

@@ -1,0 +1,3267 @@
+/* ================================================================== */
+/* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
+/* ================================================================== */
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 320px; } }
+@media screen {
+  .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+
+  .grid-container:before, .clearfix:before,
+  .grid-container:after,
+  .clearfix:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0; }
+
+  .grid-container:after, .clearfix:after {
+    clear: both; }
+
+  .grid-container, .clearfix {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */ }
+
+  .grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    /*max-width: 1200px;*/
+    /*padding-left: 10px;
+    padding-right: 10px;*/ }
+
+  .grid-5, .mobile-grid-5, .tablet-grid-5, .grid-10, .mobile-grid-10, .tablet-grid-10, .grid-15, .mobile-grid-15, .tablet-grid-15, .grid-20, .mobile-grid-20, .tablet-grid-20, .grid-25, .mobile-grid-25, .tablet-grid-25, .grid-30, .mobile-grid-30, .tablet-grid-30, .grid-35, .mobile-grid-35, .tablet-grid-35, .grid-40, .mobile-grid-40, .tablet-grid-40, .grid-45, .mobile-grid-45, .tablet-grid-45, .grid-50, .mobile-grid-50, .tablet-grid-50, .grid-55, .mobile-grid-55, .tablet-grid-55, .grid-60, .mobile-grid-60, .tablet-grid-60, .grid-65, .mobile-grid-65, .tablet-grid-65, .grid-70, .mobile-grid-70, .tablet-grid-70, .grid-75, .mobile-grid-75, .tablet-grid-75, .grid-80, .mobile-grid-80, .tablet-grid-80, .grid-85, .mobile-grid-85, .tablet-grid-85, .grid-90, .mobile-grid-90, .tablet-grid-90, .grid-95, .mobile-grid-95, .tablet-grid-95, .grid-100, .mobile-grid-100, .tablet-grid-100, .grid-33, .mobile-grid-33, .tablet-grid-33, .grid-66, .mobile-grid-66, .tablet-grid-66 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* <IE7> */
+    *padding-left: 0;
+    *padding-right: 0;
+    /* </IE7> */ }
+
+  .grid-5 > *, .mobile-grid-5 > *, .tablet-grid-5 > *, .grid-10 > *, .mobile-grid-10 > *, .tablet-grid-10 > *, .grid-15 > *, .mobile-grid-15 > *, .tablet-grid-15 > *, .grid-20 > *, .mobile-grid-20 > *, .tablet-grid-20 > *, .grid-25 > *, .mobile-grid-25 > *, .tablet-grid-25 > *, .grid-30 > *, .mobile-grid-30 > *, .tablet-grid-30 > *, .grid-35 > *, .mobile-grid-35 > *, .tablet-grid-35 > *, .grid-40 > *, .mobile-grid-40 > *, .tablet-grid-40 > *, .grid-45 > *, .mobile-grid-45 > *, .tablet-grid-45 > *, .grid-50 > *, .mobile-grid-50 > *, .tablet-grid-50 > *, .grid-55 > *, .mobile-grid-55 > *, .tablet-grid-55 > *, .grid-60 > *, .mobile-grid-60 > *, .tablet-grid-60 > *, .grid-65 > *, .mobile-grid-65 > *, .tablet-grid-65 > *, .grid-70 > *, .mobile-grid-70 > *, .tablet-grid-70 > *, .grid-75 > *, .mobile-grid-75 > *, .tablet-grid-75 > *, .grid-80 > *, .mobile-grid-80 > *, .tablet-grid-80 > *, .grid-85 > *, .mobile-grid-85 > *, .tablet-grid-85 > *, .grid-90 > *, .mobile-grid-90 > *, .tablet-grid-90 > *, .grid-95 > *, .mobile-grid-95 > *, .tablet-grid-95 > *, .grid-100 > *, .mobile-grid-100 > *, .tablet-grid-100 > *, .grid-33 > *, .mobile-grid-33 > *, .tablet-grid-33 > *, .grid-66 > *, .mobile-grid-66 > *, .tablet-grid-66 > * {
+    /* <IE7> */
+    *margin-left: expression((!this.className.match(/grid-[1-9]/) && this.currentStyle.display === "block" && this.currentStyle.width === "auto") && "10px");
+    *margin-right: expression((!this.className.match(/grid-[1-9]/) && this.currentStyle.display === "block" && this.currentStyle.width === "auto") && "10px");
+    /* </IE7> */ }
+
+  .grid-parent {
+    padding-left: 0;
+    padding-right: 0; } }
+@media screen and (max-width: 767px) {
+  .mobile-grid-100:before,
+  .mobile-grid-100:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0; }
+
+  .mobile-grid-100:after {
+    clear: both; }
+
+  .mobile-grid-100 {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */ }
+
+  .mobile-push-5,
+  .mobile-pull-5, .mobile-push-10,
+  .mobile-pull-10, .mobile-push-15,
+  .mobile-pull-15, .mobile-push-20,
+  .mobile-pull-20, .mobile-push-25,
+  .mobile-pull-25, .mobile-push-30,
+  .mobile-pull-30, .mobile-push-35,
+  .mobile-pull-35, .mobile-push-40,
+  .mobile-pull-40, .mobile-push-45,
+  .mobile-pull-45, .mobile-push-50,
+  .mobile-pull-50, .mobile-push-55,
+  .mobile-pull-55, .mobile-push-60,
+  .mobile-pull-60, .mobile-push-65,
+  .mobile-pull-65, .mobile-push-70,
+  .mobile-pull-70, .mobile-push-75,
+  .mobile-pull-75, .mobile-push-80,
+  .mobile-pull-80, .mobile-push-85,
+  .mobile-pull-85, .mobile-push-90,
+  .mobile-pull-90, .mobile-push-95,
+  .mobile-pull-95, .mobile-push-33,
+  .mobile-pull-33, .mobile-push-66,
+  .mobile-pull-66 {
+    position: relative; }
+
+  .hide-on-mobile {
+    display: none !important; }
+
+  .mobile-grid-5 {
+    float: left;
+    width: 5%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-5 {
+    margin-left: 5%; }
+
+  .mobile-suffix-5 {
+    margin-right: 5%; }
+
+  .mobile-push-5 {
+    left: 5%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-5 {
+    left: -5%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-10 {
+    float: left;
+    width: 10%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-10 {
+    margin-left: 10%; }
+
+  .mobile-suffix-10 {
+    margin-right: 10%; }
+
+  .mobile-push-10 {
+    left: 10%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-10 {
+    left: -10%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-15 {
+    float: left;
+    width: 15%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-15 {
+    margin-left: 15%; }
+
+  .mobile-suffix-15 {
+    margin-right: 15%; }
+
+  .mobile-push-15 {
+    left: 15%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-15 {
+    left: -15%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-20 {
+    float: left;
+    width: 20%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-20 {
+    margin-left: 20%; }
+
+  .mobile-suffix-20 {
+    margin-right: 20%; }
+
+  .mobile-push-20 {
+    left: 20%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-20 {
+    left: -20%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-25 {
+    float: left;
+    width: 25%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-25 {
+    margin-left: 25%; }
+
+  .mobile-suffix-25 {
+    margin-right: 25%; }
+
+  .mobile-push-25 {
+    left: 25%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-25 {
+    left: -25%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-30 {
+    float: left;
+    width: 30%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-30 {
+    margin-left: 30%; }
+
+  .mobile-suffix-30 {
+    margin-right: 30%; }
+
+  .mobile-push-30 {
+    left: 30%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-30 {
+    left: -30%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-35 {
+    float: left;
+    width: 35%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-35 {
+    margin-left: 35%; }
+
+  .mobile-suffix-35 {
+    margin-right: 35%; }
+
+  .mobile-push-35 {
+    left: 35%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-35 {
+    left: -35%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-40 {
+    float: left;
+    width: 40%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-40 {
+    margin-left: 40%; }
+
+  .mobile-suffix-40 {
+    margin-right: 40%; }
+
+  .mobile-push-40 {
+    left: 40%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-40 {
+    left: -40%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-45 {
+    float: left;
+    width: 45%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-45 {
+    margin-left: 45%; }
+
+  .mobile-suffix-45 {
+    margin-right: 45%; }
+
+  .mobile-push-45 {
+    left: 45%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-45 {
+    left: -45%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-50 {
+    float: left;
+    width: 50%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-50 {
+    margin-left: 50%; }
+
+  .mobile-suffix-50 {
+    margin-right: 50%; }
+
+  .mobile-push-50 {
+    left: 50%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-50 {
+    left: -50%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-55 {
+    float: left;
+    width: 55%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-55 {
+    margin-left: 55%; }
+
+  .mobile-suffix-55 {
+    margin-right: 55%; }
+
+  .mobile-push-55 {
+    left: 55%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-55 {
+    left: -55%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-60 {
+    float: left;
+    width: 60%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-60 {
+    margin-left: 60%; }
+
+  .mobile-suffix-60 {
+    margin-right: 60%; }
+
+  .mobile-push-60 {
+    left: 60%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-60 {
+    left: -60%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-65 {
+    float: left;
+    width: 65%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-65 {
+    margin-left: 65%; }
+
+  .mobile-suffix-65 {
+    margin-right: 65%; }
+
+  .mobile-push-65 {
+    left: 65%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-65 {
+    left: -65%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-70 {
+    float: left;
+    width: 70%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-70 {
+    margin-left: 70%; }
+
+  .mobile-suffix-70 {
+    margin-right: 70%; }
+
+  .mobile-push-70 {
+    left: 70%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-70 {
+    left: -70%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-75 {
+    float: left;
+    width: 75%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-75 {
+    margin-left: 75%; }
+
+  .mobile-suffix-75 {
+    margin-right: 75%; }
+
+  .mobile-push-75 {
+    left: 75%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-75 {
+    left: -75%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-80 {
+    float: left;
+    width: 80%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-80 {
+    margin-left: 80%; }
+
+  .mobile-suffix-80 {
+    margin-right: 80%; }
+
+  .mobile-push-80 {
+    left: 80%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-80 {
+    left: -80%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-85 {
+    float: left;
+    width: 85%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-85 {
+    margin-left: 85%; }
+
+  .mobile-suffix-85 {
+    margin-right: 85%; }
+
+  .mobile-push-85 {
+    left: 85%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-85 {
+    left: -85%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-90 {
+    float: left;
+    width: 90%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-90 {
+    margin-left: 90%; }
+
+  .mobile-suffix-90 {
+    margin-right: 90%; }
+
+  .mobile-push-90 {
+    left: 90%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-90 {
+    left: -90%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-95 {
+    float: left;
+    width: 95%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-95 {
+    margin-left: 95%; }
+
+  .mobile-suffix-95 {
+    margin-right: 95%; }
+
+  .mobile-push-95 {
+    left: 95%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-95 {
+    left: -95%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-33 {
+    float: left;
+    width: 33.33333%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-33 {
+    margin-left: 33.33333%; }
+
+  .mobile-suffix-33 {
+    margin-right: 33.33333%; }
+
+  .mobile-push-33 {
+    left: 33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-33 {
+    left: -33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-66 {
+    float: left;
+    width: 66.66667%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-prefix-66 {
+    margin-left: 66.66667%; }
+
+  .mobile-suffix-66 {
+    margin-right: 66.66667%; }
+
+  .mobile-push-66 {
+    left: 66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-pull-66 {
+    left: -66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .mobile-grid-100 {
+    clear: both;
+    width: 100%; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tablet-grid-100:before,
+  .tablet-grid-100:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0; }
+
+  .tablet-grid-100:after {
+    clear: both; }
+
+  .tablet-grid-100 {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */ }
+
+  .tablet-push-5,
+  .tablet-pull-5, .tablet-push-10,
+  .tablet-pull-10, .tablet-push-15,
+  .tablet-pull-15, .tablet-push-20,
+  .tablet-pull-20, .tablet-push-25,
+  .tablet-pull-25, .tablet-push-30,
+  .tablet-pull-30, .tablet-push-35,
+  .tablet-pull-35, .tablet-push-40,
+  .tablet-pull-40, .tablet-push-45,
+  .tablet-pull-45, .tablet-push-50,
+  .tablet-pull-50, .tablet-push-55,
+  .tablet-pull-55, .tablet-push-60,
+  .tablet-pull-60, .tablet-push-65,
+  .tablet-pull-65, .tablet-push-70,
+  .tablet-pull-70, .tablet-push-75,
+  .tablet-pull-75, .tablet-push-80,
+  .tablet-pull-80, .tablet-push-85,
+  .tablet-pull-85, .tablet-push-90,
+  .tablet-pull-90, .tablet-push-95,
+  .tablet-pull-95, .tablet-push-33,
+  .tablet-pull-33, .tablet-push-66,
+  .tablet-pull-66 {
+    position: relative; }
+
+  .hide-on-tablet {
+    display: none !important; }
+
+  .tablet-grid-5 {
+    float: left;
+    width: 5%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-5 {
+    margin-left: 5%; }
+
+  .tablet-suffix-5 {
+    margin-right: 5%; }
+
+  .tablet-push-5 {
+    left: 5%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-5 {
+    left: -5%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-10 {
+    float: left;
+    width: 10%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-10 {
+    margin-left: 10%; }
+
+  .tablet-suffix-10 {
+    margin-right: 10%; }
+
+  .tablet-push-10 {
+    left: 10%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-10 {
+    left: -10%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-15 {
+    float: left;
+    width: 15%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-15 {
+    margin-left: 15%; }
+
+  .tablet-suffix-15 {
+    margin-right: 15%; }
+
+  .tablet-push-15 {
+    left: 15%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-15 {
+    left: -15%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-20 {
+    float: left;
+    width: 20%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-20 {
+    margin-left: 20%; }
+
+  .tablet-suffix-20 {
+    margin-right: 20%; }
+
+  .tablet-push-20 {
+    left: 20%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-20 {
+    left: -20%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-25 {
+    float: left;
+    width: 25%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-25 {
+    margin-left: 25%; }
+
+  .tablet-suffix-25 {
+    margin-right: 25%; }
+
+  .tablet-push-25 {
+    left: 25%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-25 {
+    left: -25%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-30 {
+    float: left;
+    width: 30%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-30 {
+    margin-left: 30%; }
+
+  .tablet-suffix-30 {
+    margin-right: 30%; }
+
+  .tablet-push-30 {
+    left: 30%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-30 {
+    left: -30%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-35 {
+    float: left;
+    width: 35%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-35 {
+    margin-left: 35%; }
+
+  .tablet-suffix-35 {
+    margin-right: 35%; }
+
+  .tablet-push-35 {
+    left: 35%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-35 {
+    left: -35%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-40 {
+    float: left;
+    width: 40%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-40 {
+    margin-left: 40%; }
+
+  .tablet-suffix-40 {
+    margin-right: 40%; }
+
+  .tablet-push-40 {
+    left: 40%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-40 {
+    left: -40%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-45 {
+    float: left;
+    width: 45%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-45 {
+    margin-left: 45%; }
+
+  .tablet-suffix-45 {
+    margin-right: 45%; }
+
+  .tablet-push-45 {
+    left: 45%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-45 {
+    left: -45%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-50 {
+    float: left;
+    width: 50%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-50 {
+    margin-left: 50%; }
+
+  .tablet-suffix-50 {
+    margin-right: 50%; }
+
+  .tablet-push-50 {
+    left: 50%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-50 {
+    left: -50%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-55 {
+    float: left;
+    width: 55%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-55 {
+    margin-left: 55%; }
+
+  .tablet-suffix-55 {
+    margin-right: 55%; }
+
+  .tablet-push-55 {
+    left: 55%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-55 {
+    left: -55%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-60 {
+    float: left;
+    width: 60%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-60 {
+    margin-left: 60%; }
+
+  .tablet-suffix-60 {
+    margin-right: 60%; }
+
+  .tablet-push-60 {
+    left: 60%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-60 {
+    left: -60%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-65 {
+    float: left;
+    width: 65%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-65 {
+    margin-left: 65%; }
+
+  .tablet-suffix-65 {
+    margin-right: 65%; }
+
+  .tablet-push-65 {
+    left: 65%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-65 {
+    left: -65%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-70 {
+    float: left;
+    width: 70%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-70 {
+    margin-left: 70%; }
+
+  .tablet-suffix-70 {
+    margin-right: 70%; }
+
+  .tablet-push-70 {
+    left: 70%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-70 {
+    left: -70%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-75 {
+    float: left;
+    width: 75%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-75 {
+    margin-left: 75%; }
+
+  .tablet-suffix-75 {
+    margin-right: 75%; }
+
+  .tablet-push-75 {
+    left: 75%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-75 {
+    left: -75%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-80 {
+    float: left;
+    width: 80%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-80 {
+    margin-left: 80%; }
+
+  .tablet-suffix-80 {
+    margin-right: 80%; }
+
+  .tablet-push-80 {
+    left: 80%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-80 {
+    left: -80%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-85 {
+    float: left;
+    width: 85%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-85 {
+    margin-left: 85%; }
+
+  .tablet-suffix-85 {
+    margin-right: 85%; }
+
+  .tablet-push-85 {
+    left: 85%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-85 {
+    left: -85%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-90 {
+    float: left;
+    width: 90%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-90 {
+    margin-left: 90%; }
+
+  .tablet-suffix-90 {
+    margin-right: 90%; }
+
+  .tablet-push-90 {
+    left: 90%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-90 {
+    left: -90%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-95 {
+    float: left;
+    width: 95%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-95 {
+    margin-left: 95%; }
+
+  .tablet-suffix-95 {
+    margin-right: 95%; }
+
+  .tablet-push-95 {
+    left: 95%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-95 {
+    left: -95%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-33 {
+    float: left;
+    width: 33.33333%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-33 {
+    margin-left: 33.33333%; }
+
+  .tablet-suffix-33 {
+    margin-right: 33.33333%; }
+
+  .tablet-push-33 {
+    left: 33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-33 {
+    left: -33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-66 {
+    float: left;
+    width: 66.66667%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-prefix-66 {
+    margin-left: 66.66667%; }
+
+  .tablet-suffix-66 {
+    margin-right: 66.66667%; }
+
+  .tablet-push-66 {
+    left: 66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-pull-66 {
+    left: -66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .tablet-grid-100 {
+    clear: both;
+    width: 100%; } }
+@media screen and (min-width: 1025px) {
+  .grid-100:before,
+  .grid-100:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0; }
+
+  .grid-100:after {
+    clear: both; }
+
+  .grid-100 {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */ }
+
+  .push-5,
+  .pull-5, .push-10,
+  .pull-10, .push-15,
+  .pull-15, .push-20,
+  .pull-20, .push-25,
+  .pull-25, .push-30,
+  .pull-30, .push-35,
+  .pull-35, .push-40,
+  .pull-40, .push-45,
+  .pull-45, .push-50,
+  .pull-50, .push-55,
+  .pull-55, .push-60,
+  .pull-60, .push-65,
+  .pull-65, .push-70,
+  .pull-70, .push-75,
+  .pull-75, .push-80,
+  .pull-80, .push-85,
+  .pull-85, .push-90,
+  .pull-90, .push-95,
+  .pull-95, .push-33,
+  .pull-33, .push-66,
+  .pull-66 {
+    position: relative; }
+
+  .hide-on-desktop {
+    display: none !important; }
+
+  .grid-5 {
+    float: left;
+    width: 5%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-5 {
+    margin-left: 5%; }
+
+  .suffix-5 {
+    margin-right: 5%; }
+
+  .push-5 {
+    left: 5%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-5 {
+    left: -5%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-10 {
+    float: left;
+    width: 10%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-10 {
+    margin-left: 10%; }
+
+  .suffix-10 {
+    margin-right: 10%; }
+
+  .push-10 {
+    left: 10%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-10 {
+    left: -10%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-15 {
+    float: left;
+    width: 15%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-15 {
+    margin-left: 15%; }
+
+  .suffix-15 {
+    margin-right: 15%; }
+
+  .push-15 {
+    left: 15%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-15 {
+    left: -15%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-20 {
+    float: left;
+    width: 20%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-20 {
+    margin-left: 20%; }
+
+  .suffix-20 {
+    margin-right: 20%; }
+
+  .push-20 {
+    left: 20%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-20 {
+    left: -20%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-25 {
+    float: left;
+    width: 25%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-25 {
+    margin-left: 25%; }
+
+  .suffix-25 {
+    margin-right: 25%; }
+
+  .push-25 {
+    left: 25%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-25 {
+    left: -25%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-30 {
+    float: left;
+    width: 30%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-30 {
+    margin-left: 30%; }
+
+  .suffix-30 {
+    margin-right: 30%; }
+
+  .push-30 {
+    left: 30%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-30 {
+    left: -30%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-35 {
+    float: left;
+    width: 35%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-35 {
+    margin-left: 35%; }
+
+  .suffix-35 {
+    margin-right: 35%; }
+
+  .push-35 {
+    left: 35%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-35 {
+    left: -35%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-40 {
+    float: left;
+    width: 40%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-40 {
+    margin-left: 40%; }
+
+  .suffix-40 {
+    margin-right: 40%; }
+
+  .push-40 {
+    left: 40%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-40 {
+    left: -40%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-45 {
+    float: left;
+    width: 45%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-45 {
+    margin-left: 45%; }
+
+  .suffix-45 {
+    margin-right: 45%; }
+
+  .push-45 {
+    left: 45%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-45 {
+    left: -45%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-50 {
+    float: left;
+    width: 50%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-50 {
+    margin-left: 50%; }
+
+  .suffix-50 {
+    margin-right: 50%; }
+
+  .push-50 {
+    left: 50%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-50 {
+    left: -50%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-55 {
+    float: left;
+    width: 55%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-55 {
+    margin-left: 55%; }
+
+  .suffix-55 {
+    margin-right: 55%; }
+
+  .push-55 {
+    left: 55%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-55 {
+    left: -55%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-60 {
+    float: left;
+    width: 60%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-60 {
+    margin-left: 60%; }
+
+  .suffix-60 {
+    margin-right: 60%; }
+
+  .push-60 {
+    left: 60%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-60 {
+    left: -60%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-65 {
+    float: left;
+    width: 65%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-65 {
+    margin-left: 65%; }
+
+  .suffix-65 {
+    margin-right: 65%; }
+
+  .push-65 {
+    left: 65%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-65 {
+    left: -65%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-70 {
+    float: left;
+    width: 70%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-70 {
+    margin-left: 70%; }
+
+  .suffix-70 {
+    margin-right: 70%; }
+
+  .push-70 {
+    left: 70%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-70 {
+    left: -70%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-75 {
+    float: left;
+    width: 75%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-75 {
+    margin-left: 75%; }
+
+  .suffix-75 {
+    margin-right: 75%; }
+
+  .push-75 {
+    left: 75%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-75 {
+    left: -75%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-80 {
+    float: left;
+    width: 80%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-80 {
+    margin-left: 80%; }
+
+  .suffix-80 {
+    margin-right: 80%; }
+
+  .push-80 {
+    left: 80%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-80 {
+    left: -80%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-85 {
+    float: left;
+    width: 85%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-85 {
+    margin-left: 85%; }
+
+  .suffix-85 {
+    margin-right: 85%; }
+
+  .push-85 {
+    left: 85%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-85 {
+    left: -85%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-90 {
+    float: left;
+    width: 90%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-90 {
+    margin-left: 90%; }
+
+  .suffix-90 {
+    margin-right: 90%; }
+
+  .push-90 {
+    left: 90%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-90 {
+    left: -90%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-95 {
+    float: left;
+    width: 95%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-95 {
+    margin-left: 95%; }
+
+  .suffix-95 {
+    margin-right: 95%; }
+
+  .push-95 {
+    left: 95%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-95 {
+    left: -95%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-33 {
+    float: left;
+    width: 33.33333%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-33 {
+    margin-left: 33.33333%; }
+
+  .suffix-33 {
+    margin-right: 33.33333%; }
+
+  .push-33 {
+    left: 33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-33 {
+    left: -33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-66 {
+    float: left;
+    width: 66.66667%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .prefix-66 {
+    margin-left: 66.66667%; }
+
+  .suffix-66 {
+    margin-right: 66.66667%; }
+
+  .push-66 {
+    left: 66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .pull-66 {
+    left: -66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */ }
+
+  .grid-100 {
+    clear: both;
+    width: 100%; } }
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+==========================================================================
+	BASE STYLES (scss/partials/_base.scss)
+==========================================================================
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif; }
+
+html, body {
+  background-color: #eff3f2; }
+
+a, a img, input[type=submit] {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out; }
+
+address {
+  font-style: normal; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: black;
+  text-shadow: none;
+  color: white; }
+
+::selection {
+  background: black;
+  text-shadow: none;
+  color: white; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+input[type=text], textarea, select {
+  padding: 10px 10px 9px 10px; }
+  input[type=text]:focus, textarea:focus, select:focus {
+    outline: 0; }
+
+textarea {
+  resize: vertical; }
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 95%; }
+  @media screen and (max-width: 767px) {
+    #wrapper {
+      max-width: 100%; } }
+
+.container {
+  overflow: auto;
+  padding-bottom: 40px;
+  /*@media screen and (max-width: 767px) {
+  	padding: 20px;
+  }
+  // Compressed (tablets, small browsers)
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  	padding: 20px;
+  }
+  // Big'uns (desktop)
+  @media screen and (min-width: 1025px) {
+  	padding: 40px;
+  }*/ }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.row {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px; }
+
+.fill {
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+@media screen and (max-width: 600px) {
+  .hidden-phone {
+    display: none; } }
+
+.no-margin {
+  margin: 0; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/*
+==========================================================================
+    TYPOGRAPHY (scss/partials/_typography.scss)
+==========================================================================
+*/
+h1 {
+  font-family: 'Libre Baskerville', 'Times', serif;
+  line-height: 1.45;
+  font-size: 26px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  padding-bottom: 12px;
+  color: #fff;
+  opacity: .7;
+  padding-top: 30px;
+  margin: 0 auto; }
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 18px;
+      padding-top: 10px; } }
+
+h3 {
+  position: absolute;
+  top: 32%;
+  width: 100%;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 300;
+  text-shadow: 1px 1px 11px rgba(0, 0, 0, 0.7);
+  letter-spacing: -.55px;
+  margin: 0 auto;
+  left: 0px;
+  opacity: .8;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.03;
+  padding: 15px; }
+  @media screen and (max-width: 767px) {
+    h3 {
+      padding-top: 65px;
+      position: static;
+      font-size: 20px; } }
+
+h4 {
+  font-family: 'Libre Baskerville', 'Times', serif;
+  line-height: 1.45;
+  font-size: 26px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  padding-top: 60px;
+  padding-bottom: 12px;
+  color: #343434;
+  opacity: 1;
+  margin: 0 auto; }
+
+h5 i {
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  color: #11cfbf; }
+
+h5 {
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+  text-shadow: 3px 2px 20px black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: #11cfbf;
+  position: relative;
+  top: 150px; }
+
+h6 {
+  font-family: 'Libre Baskerville', 'Times', serif;
+  line-height: 1.45;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  color: #fff;
+  opacity: 1;
+  margin: 0 auto;
+  display: inline-block; }
+  @media screen and (max-width: 767px) {
+    h6 {
+      font-size: 12px; } }
+
+#play-info {
+  font-family: 'Libre Baskerville', 'Times', serif;
+  display: inline-block;
+  font-size: 13px;
+  font-style: italic;
+  margin-left: 3px;
+  text-align: center;
+  width: 80px;
+  opacity: .5;
+  color: white; }
+
+/*
+==========================================================================
+	BUTTONS (scss/partials/_buttons.scss)
+==========================================================================
+*/
+button {
+  display: block;
+  padding: 8px 20px;
+  border: 1px solid rgba(235, 235, 235, 0.2);
+  background-color: black;
+  border-radius: 22px;
+  font-weight: 400;
+  color: white;
+  line-height: 22px;
+  font-family: 'Libre Baskerville', 'Times', serif;
+  font-size: 20px;
+  margin-top: 8px;
+  font-style: italic;
+  opacity: 1;
+  display: block;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
+
+button:hover {
+  background-color: #11cfbf; }
+
+.button {
+  display: inline-block !important;
+  padding: 8px 20px;
+  border: 1px solid rgba(235, 235, 235, 0.16);
+  border-radius: 22px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 20px;
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+  opacity: 1;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
+
+.button-emphasize {
+  border-color: rgba(17, 207, 191, 0.7); }
+
+.button-emphasize i {
+  color: gba(17, 207, 191, 0.7) !important; }
+
+.button:hover {
+  cursor: pointer;
+  background: #11cfbf;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  border-color: #11cfbf; }
+
+.button-trans {
+  border: none;
+  background-color: transparent;
+  margin-right: 12px;
+  padding: 8px 20px;
+  font-weight: 400;
+  color: #777;
+  line-height: 20px;
+  font-family: 'Libre Baskerville', 'Times', serif;
+  font-style: italic;
+  margin-top: 8px;
+  opacity: 1;
+  display: inline-block;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
+
+.button-trans:hover {
+  cursor: pointer;
+  color: #11cfbf;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
+
+@media screen and (max-width: 767px) {
+  .about, .upload {
+    display: none !important; } }
+
+.button-primary {
+  background: #11cfbf;
+  border-color: #11cfbf;
+  text-decoration: none; }
+
+.button-primary:hover {
+  background: transparent !important;
+  color: #fff; }
+
+button.secondary {
+  background-color: #454545;
+  border: 1px solid rgba(235, 235, 235, 0.2);
+  font-size: 16px; }
+
+/*
+==========================================================================
+	HEADER (scss/partials/_header.scss)
+==========================================================================
+*/
+header.branding {
+  width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  height: 560px;
+  margin: 0 auto;
+  margin-top: 2.2%;
+  background-image: url("../img/unsaturated-buffalo-2000x1000.jpg");
+  background-position-y: 83%;
+  background-size: cover;
+  /*@media screen and (max-width: 767px) {
+  	height: 370px;
+  	margin-top: 40px;
+  }*/ }
+  @media screen and (max-width: 1024px) {
+    header.branding {
+      height: 400px; } }
+  @media screen and (max-width: 500px) {
+    header.branding {
+      height: 200px;
+      margin-top: 44px;
+      border: 1px solid #eff3f2; } }
+
+header.branding img {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 75%; }
+  @media screen and (max-width: 767px) {
+    header.branding img {
+      width: 70%;
+      margin-top: 46px; } }
+
+.branding-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); }
+  @media screen and (max-width: 767px) {
+    .branding-wrapper {
+      background: rgba(0, 0, 0, 0.7);
+                                                                                                                       /* IE9 SVG, needs conditional override of 'filter' to 'none' *
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyMjIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjMjIyMjIyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTYlIiBzdG9wLWNvbG9yPSIjMjUyNTI1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjglIiBzdG9wLWNvbG9yPSIjMmUyZTJlIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzM0MzQzNCIgc3RvcC1vcGFjaXR5PSIwLjc1Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  rgba(34,34,34,1) 0%, rgba(34,34,34,1) 1%, rgba(37,37,37,1) 16%, rgba(46,46,46,0.75) 68%, rgba(52,52,52,0.75) 100%); /* FF3.6+ *
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,34,34,1)), color-stop(1%,rgba(34,34,34,1)), color-stop(16%,rgba(37,37,37,1)), color-stop(68%,rgba(46,46,46,0.75)), color-stop(100%,rgba(52,52,52,0.75))); /* Chrome,Safari4+ *
+background: -webkit-linear-gradient(top,  rgba(34,34,34,1) 0%,rgba(34,34,34,1) 1%,rgba(37,37,37,1) 16%,rgba(46,46,46,0.75) 68%,rgba(52,52,52,0.75) 100%); /* Chrome10+,Safari5.1+ *
+background: -o-linear-gradient(top,  rgba(34,34,34,1) 0%,rgba(34,34,34,1) 1%,rgba(37,37,37,1) 16%,rgba(46,46,46,0.75) 68%,rgba(52,52,52,0.75) 100%); /* Opera 11.10+ *
+background: -ms-linear-gradient(top,  rgba(34,34,34,1) 0%,rgba(34,34,34,1) 1%,rgba(37,37,37,1) 16%,rgba(46,46,46,0.75) 68%,rgba(52,52,52,0.75) 100%); /* IE10+ *
+background: linear-gradient(to bottom,  rgba(34,34,34,1) 0%,rgba(34,34,34,1) 1%,rgba(37,37,37,1) 16%,rgba(46,46,46,0.75) 68%,rgba(52,52,52,0.75) 100%); /* W3C *
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#bf343434',GradientType=0 ); /* IE6-8 */ } }
+
+.header-nav {
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+  clear: both;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  left: -13px;
+  text-align: center; }
+  @media screen and (max-width: 767px) {
+    .header-nav {
+      display: none; } }
+
+.header-nav img {
+  max-width: 140px;
+  opacity: 1; }
+
+.header-nav--block {
+  width: 40%; }
+
+.block-left {
+  float: left; }
+
+.block-right {
+  float: right; }
+
+.nav-item {
+  width: 50%;
+  float: left;
+  line-height: 45px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 400;
+  color: #555;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0; }
+
+.nav-item:hover {
+  color: #11cfbf;
+  transition: all .7s;
+  -webkit-transition: all .7s;
+  cursor: pointer; }
+
+.nav:hover {
+  transition: all .7s;
+  -webkit-transition: all .7s; }
+
+.active {
+  color: #11cfbf; }
+
+.header-nav i {
+  line-height: 60px;
+  opacity: .4; }
+
+/*
+==========================================================================
+	CONTENT (scss/partials/_content.scss)
+==========================================================================
+*/
+hr {
+  width: 90px;
+  border-top: 7px solid #11cfbf;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #11cfbf;
+  display: inline-block; }
+
+.header-link {
+  color: #777;
+  font-size: 13px; }
+  .header-link i {
+    position: relative;
+    left: 5px; }
+
+.header-link:hover {
+  color: #11cfbf; }
+
+.item {
+  display: block;
+  width: 33.3%;
+  height: 350px;
+  border: 1px solid #eff3f2;
+  background-size: cover;
+  background-position-x: 50%;
+  float: left;
+  margin: 0px auto;
+  position: relative;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
+  @media screen and (max-width: 767px) {
+    .item {
+      width: 100%;
+      height: 200px;
+      background-position-x: 60%;
+      border-left: 1px solid #eff3f2;
+      border-right: 1px solid #eff3f2;
+      border-bottom: 1px solid #eff3f2;
+      border-top: 0px; } }
+
+.item:hover {
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  /*-webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px);*/ }
+
+.item-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(24, 24, 24, 0.7) 5px 0px 100px 0px inset; }
+  @media screen and (max-width: 767px) {
+    .item-wrapper {
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: none; } }
+
+@media screen and (min-width: 767px) {
+  .item-wrapper:hover {
+    cursor: pointer;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 24%, black 73%, black 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(24%, rgba(0, 0, 0, 0.6)), color-stop(73%, black), color-stop(100%, black));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 24%, black 73%, black 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 24%, black 73%, black 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 24%, black 73%, black 100%);
+    /* IE10+ */
+    background: linear, to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 24%, black 73%, black 100%;
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ } }
+
+.details--wrapper {
+  position: absolute;
+  bottom: 30px;
+  width: 100%; }
+  @media screen and (max-width: 767px) {
+    .details--wrapper {
+      position: static;
+      width: 90%;
+      margin: 0 auto;
+      left: 5%; } }
+
+.song-title {
+  font-family: 'Libre Baskerville';
+  font-style: italic; }
+
+.item--songtitle {
+  /*position: absolute;
+  bottom: 0px;
+  left:5px;*/
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.3;
+  font-family: 'Libre Baskerville';
+  color: #fff;
+  /*background: rgba(233,233,233,1);
+  /*background: rgba(17,207,191,.9);*/
+  padding-bottom: 7px;
+  /*border-bottom: 1px solid rgba(255,255,255,.3);*/
+  opacity: 0;
+  transition: all .7s;
+  -webkit-transition: all .7s; }
+  @media screen and (max-width: 767px) {
+    .item--songtitle {
+      display: none; } }
+
+.item--songtitle i {
+  position: relative;
+  top: 3px;
+  opacity: .4;
+  display: none; }
+
+.item:hover .item--songtitle {
+  opacity: .4;
+  transition: all .7s;
+  -webkit-transition: all .7s; }
+
+.item--submitter {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  /*position: absolute;
+  bottom: 12px;
+  right: 12px;*/
+  font-size: 15px;
+  font-style: italic;
+  font-family: 'Libre Baskerville';
+  color: #fff;
+  opacity: 0;
+  /*background: rgba(17,207,191,.9);*/
+  transition: all .7s;
+  -webkit-transition: all .7s; }
+
+.item--submitter:hover {
+  text-decoration: underline; }
+
+.item--submitter i {
+  opacity: .8;
+  display: none;
+  position: relative;
+  top: 3px; }
+
+.item:hover .item--submitter {
+  opacity: .4;
+  transition: all .7s;
+  -webkit-transition: all .7s; }
+
+.item img {
+  max-width: 100%;
+  opacity: .9;
+  margin-bottom: 0px; }
+
+.translateY-0px {
+  -webkit-transform: translateY(0px) !important;
+  -moz-transform: translateY(0px) !important;
+  -ms-transform: translateY(0px) !important;
+  -o-transform: translateY(0px) !important;
+  transform: translateY(0px) !important;
+  transition: all 250ms;
+  -webkit-transition: all 250ms; }
+
+#header-wrapper a {
+  text-decoration: none !important; }
+
+#header-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  background: #222222;
+  transition: all 250ms;
+  -webkit-transition: all 250ms; }
+  @media screen and (min-width: 768px) {
+    #header-wrapper {
+      -webkit-transform: translateY(-96px);
+      -moz-transform: translateY(-96px);
+      -ms-transform: translateY(-96px);
+      -o-transform: translateY(-96px);
+      transform: translateY(-96px); } }
+
+.row-container {
+  max-width: 95%;
+  position: relative;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 55px;
+  text-align: center;
+  color: #fff;
+  padding-top: 5px; }
+  @media screen and (max-width: 767px) {
+    .row-container {
+      width: 100%;
+      height: 44px;
+      line-height: 44px; } }
+
+.row-container i {
+  opacity: .7;
+  position: relative;
+  top: 2px; }
+
+#header-branding {
+  opacity: .15;
+  padding-top: 0px;
+  max-width: 100px;
+  margin-left: 3%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  @media screen and (max-width: 767px) {
+    #header-branding {
+      max-width: 75px;
+      top: 0px; } }
+
+#header-branding-label {
+  width: 70%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+#header-menu {
+  padding-top: 3px; }
+  #header-menu div {
+    float: left; }
+
+.header-secondary {
+  height: 25px;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Libre Baskerville', 'Times', serif;
+  font-style: italic;
+  position: relative; }
+  @media screen and (max-width: 767px) {
+    .header-secondary {
+      margin-top: 0px;
+      margin-bottom: 13px;
+      display: none; } }
+
+.header-secondaryWrapper {
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  color: white;
+  opacity: 1;
+  position: relative; }
+
+#active-track {
+  width: 70%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  @media screen and (max-width: 767px) {
+    #active-track {
+      width: 100%; } }
+
+#active-track-name {
+  margin: 0px !important;
+  padding: 0px !important;
+  padding-top: 3px !important; }
+
+#mobile-active-track {
+  color: white;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+  font-family: 'Libre Baskerville', 'Times', serif;
+  font-style: italic; }
+
+#mobile-play-info {
+  display: inline-block; }
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  /*Needed to reset default slider styles */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px; }
+
+input[type="range"]:focus {
+  outline: 0; }
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  transition: all 0.5s ease; }
+
+input[type="range"]:hover:-webkit-slider-thumb {
+  color: #11cfbf; }
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #11cfbf; }
+
+/* MOZILLA */
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  transition: all 0.5s ease; }
+
+input[type="range"]::-moz-range-track {
+  background-color: rgba(255, 255, 255, 0.4); }
+
+input[type="range"]:hover:-moz-range-thumb {
+  color: #11cfbf; }
+
+input[type="range"]::-moz-range-thumb:hover {
+  background-color: #11cfbf; }
+
+#sharebutton {
+  color: #777;
+  font-family: 'Libre Baskerville', 'Times', serif;
+  font-style: italic;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  margin-right: 5px; }
+
+#sharebutton:hover {
+  color: #11cfbf;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out; }
+
+.fieldgroup {
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif; }
+
+input[type=text] {
+  width: 47%;
+  height: 40px;
+  background: rgba(248, 248, 248, 0);
+  border: 1px solid #343434;
+  text-align: center;
+  font-family: 'Lato';
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 200; }
+
+.fieldgroup .matcher {
+  line-height: 40px; }
+
+/* GRAVITY FORMS STYLE OVERRIDES */
+#field_1_1 {
+  width: 49%;
+  float: left;
+  margin-right: 7px;
+  clear: none !important; }
+
+#input_1_1 {
+  width: 100%; }
+
+#field_1_2 {
+  width: 49%;
+  float: left;
+  margin-left: 7px !important;
+  clear: none !important; }
+
+#input_1_2 {
+  width: 100%; }
+
+#field_1_4 {
+  width: 48%;
+  float: left;
+  clear: none; }
+
+#input_1_4 {
+  width: 100%; }
+
+.gform_footer {
+  float: right;
+  clear: none !important; }
+
+textarea {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-family: 'Lato';
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 200;
+  background: rgba(248, 248, 248, 0);
+  border: 1px solid #343434;
+  padding-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  clear: both; }
+
+#about {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  width: 100%;
+  height: 520px;
+  text-align: center;
+  padding-top: 5.7%;
+  position: fixed;
+  top: -560px;
+  left: 0;
+  background: rgba(239, 243, 242, 0.96);
+  z-index: 2;
+  visibility: hidden; }
+
+.offcanvas-visible {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  top: 0px !important;
+  visibility: visible !important; }
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.about-container p {
+  max-width: 900px;
+  text-align: left !important;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 18px;
+  color: #999;
+  line-height: 1.3; }
+
+#submit-track {
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  padding-top: 5.7%;
+  position: fixed;
+  top: -600px;
+  left: 0;
+  background: rgba(239, 243, 242, 0.96);
+  z-index: 2;
+  visibility: hidden; }
+
+#form--wrapper {
+  padding-top: 20px;
+  width: 55%;
+  margin: 0 auto; }
+
+/* ====================
+ITEM (TRACK LISTING) PLAYER CONTROLS 
+======================= */
+.playbutton {
+  width: 100%;
+  text-align: center; }
+
+.item--play {
+  display: inline-block;
+  background-color: #11cfbf;
+  padding: 10px 13px;
+  border-radius: 70%;
+  margin-bottom: 15px;
+  opacity: 0;
+  font-size: 1em;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
+  @media screen and (max-width: 767px) {
+    .item--play {
+      opacity: 1; } }
+
+.viewable {
+  opacity: 1; }
+
+.item--play:hover {
+  background-color: #11cfbf; }
+
+.item--play i {
+  position: relative;
+  top: 3px;
+  left: 2px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  color: #111; }
+
+.item--play i.ss-pause {
+  left: 0px !important; }
+
+.item--play:hover i {
+  color: #111; }
+
+.item:hover .item--play {
+  opacity: 1;
+  transition: all .7s;
+  -webkit-transition: all .7s; }
+
+/* ====================
+DESKTOP PLAYER CONTROLS - specific to desktop player - in section#header-wrapper
+======================= */
+@media screen and (max-width: 767px) {
+  .desktop-player {
+    display: none !important; } }
+
+/* ====================
+MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
+======================= */
+#player-wrapper {
+  display: block;
+  position: fixed;
+  height: 78px;
+  width: 100%;
+  bottom: 0;
+  background: #222222;
+  text-align: center;
+  padding-top: 7px; }
+
+#player-image {
+  position: absolute;
+  width: 100%;
+  height: 78px;
+  background-size: cover !important;
+  background-position: center center !important;
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  filter: blur(50px);
+  overflow: hidden; }
+
+#player-image-cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); }
+
+/* ====================
+PLAYER CONTROLS - generic to mobile and desktop
+======================= */
+.player-control {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out; }
+
+.player-control:hover {
+  color: #11cfbf;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out; }
+
+.skipback {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.skipforward {
+  margin-left: 5px; }
+
+.volume {
+  display: block !important; }
+
+/*
+==========================================================================
+	FOOTER (scss/partials/_footer.scss)
+==========================================================================
+*/
+#footer {
+  margin: 0 auto;
+  max-width: 95% !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border-top: 1px solid #bbb;
+  padding-top: 8px;
+  padding-bottom: 60px !important;
+  font-family: 'Lato', Helvetica, Arial, Sans-serif;
+  color: #999;
+  font-size: 13px; }
+
+#footer a {
+  color: #999;
+  text-decoration: none; }
+
+#footer a:Hover {
+  color: #111; }
+
+#footer a i {
+  font-size: 17px; }
+
+/*
+==========================================================================
+	GRAVITY FORMS (scss/partials/_gravity-forms.scss)
+==========================================================================
+*/
+/*
+==========================================================================
+	PRINT STYLES [print]
+	Cribbed from html5bp.
+==========================================================================
+*/
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }

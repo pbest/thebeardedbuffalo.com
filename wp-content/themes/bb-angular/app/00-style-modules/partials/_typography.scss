@@ -1,0 +1,163 @@
+/*
+==========================================================================
+    TYPOGRAPHY (scss/partials/_typography.scss)
+==========================================================================
+*/
+//
+//  @FONT-FACE DECLARATIONS
+//
+// @font-face {
+// 	font-family: 'Puesto-Iconset';
+// 	src:url('../fonts/Puesto-Iconset.eot');
+// 	src:url('../fonts/Puesto-Iconset.eot?#iefix') format('embedded-opentype'),
+// 		url('../fonts/Puesto-Iconset.woff') format('woff'),
+// 		url('../fonts/Puesto-Iconset.ttf') format('truetype'),
+// 		url('../fonts/Puesto-Iconset.svg#Puesto-Iconset') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+//  PUESTO ICONSET KEY
+//  
+//  Social Media
+//      Yelp                                                &#xe002;
+//      Twitter                                             &#xe003;
+//      Trip Advisor                                        &#xe004;
+//      Pinterest                                           &#xe005;
+//      Instagram                                           &#xe006;
+//      Foursquare                                          &#xe007;
+//      Facebook                                            &#xe008;
+//  Menu
+//      Zucchini & Cactus / Veggie                          &#xe009;
+//      Potato Soy Chorizo                                  &#xe00a;
+//      Paletas                                             &#xe00b;
+//      Mexican Street Cup                                  &#xe00c;
+//      Grilled Shrimp                                      &#xe00d;
+//      Grilled Salmon                                      &#xe00e;
+//      Drink cup (froz. horch.)                            &#xe00f;
+//      Chicken al Pastor                                   &#xe010;
+//      Carnitas (pig)                                      &#xe011;
+//      Carne Asada (cow)                                   &#xe012;
+//      Full taco                                           &#xe000;
+//      Cocktail glass                                      &#xe017;
+//      
+//  Locations
+//      San Diego                                           &#xe013;
+//      La Jolla                                            &#xe014;
+//  Misc
+//      Logo                                                &#xe001;
+//      Lunch time clock                                    &#xe015;
+//      Dinner time clock                                   &#xe016;
+//      Plus circle                                         &#xe603;
+//      Minus circle                                        &#xe604;
+//      Nav handle                                          &#xe605;
+//      Opentable Logo                                      &#xe606;
+//      PDF                                                 &#xe607;
+//  Twitter
+//      Favorite                                            &#xe600;
+//      Reply                                               &#xe601;
+//      Retweet                                             &#xe602;
+
+html,body {
+   
+}
+a {
+    
+}
+
+h1 {
+	@include serif;
+	line-height: 1.45;
+	font-size: 26px;
+	text-align: center;
+	font-style: italic;
+	font-weight: 400;
+	padding-bottom: 12px;
+	color: #fff;
+	opacity: .7;
+	padding-top: 30px;
+	margin: 0 auto;
+	@media screen and (max-width:767px) {
+		font-size: 18px;
+		padding-top: 10px;
+	}
+}
+h3 {
+	position: absolute;
+	top: 32%;
+	width: 100%;
+	@include sans-serif;
+	font-weight: 300;
+	text-shadow: 1px 1px 11px rgba(0,0,0,.7);
+	letter-spacing: -.55px;
+	margin: 0 auto;
+	left: 0px;
+	opacity: .8;
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+	line-height: 1.03;
+	padding: 15px;
+	@media screen and (max-width: 767px) {
+		padding-top: 65px;
+		position: static;
+		font-size: 20px;
+	}
+
+}
+h4 {
+	@include serif;
+	line-height: 1.45;
+	font-size: 26px;
+	text-align: center;
+	font-style: italic;
+	font-weight: 400;
+	padding-top: 60px;
+	padding-bottom: 12px;
+	color: #343434;
+	opacity: 1;
+	margin: 0 auto;
+}
+h5 i {
+	font-size: 20px;
+	position: relative;
+	top: 10px;
+	color: rgba(17,207,191,1);
+}
+h5 {
+	@include sans-serif;
+	text-shadow: 3px 2px 20px rgba(0,0,0,1);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;
+	color: rgb(17,207,191);
+	position: relative;
+	top: 150px;
+}
+h6 {
+	@include serif;
+	line-height: 1.45;
+	font-size: 15px;
+	text-align: center;
+	font-style: italic;
+	font-weight: 400;
+	padding-top: 13px;
+	padding-bottom: 12px;
+	color: #fff;
+	opacity: 1;
+	margin: 0 auto;
+	display: inline-block;
+	@media screen and (max-width:767px) {
+		font-size: 12px;
+	}
+}
+#play-info {
+    @include serif;
+    display: inline-block;
+    font-size: 13px;
+    font-style: italic;
+    margin-left: 3px;
+    text-align: center;
+    width: 80px;
+    opacity: .5;
+    color: $white;
+}

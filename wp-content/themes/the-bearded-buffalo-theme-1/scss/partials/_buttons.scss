@@ -1,0 +1,102 @@
+/*
+==========================================================================
+	BUTTONS (scss/partials/_buttons.scss)
+==========================================================================
+*/
+
+button {
+	display: block;
+	padding: 8px 20px;
+	border: 1px solid rgba(235,235,235,.2);
+	background-color: $black;
+	border-radius: 22px;
+	font-weight: 400;
+	color: $white;
+	line-height: 22px;
+	@include serif;
+	font-size: 20px;
+	margin-top: 8px;
+	font-style: italic;
+	opacity: 1;
+	display: block;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+}
+button:hover {
+	background-color: $cyan;
+
+}
+.button {
+	display: inline-block !important;
+	padding: 8px 20px;
+	border: 1px solid rgba(235,235,235,.16);
+	//background-color: #454545;
+	border-radius: 22px;
+	font-weight: 400;
+	color: #fff;
+	line-height: 20px;
+	font-family: 'Libre Baskerville';
+	font-style: italic;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 14px;
+	opacity: 1;
+		transition: all .5s;
+	-webkit-transition: all .5s;
+}
+.button-emphasize {
+	border-color: rgba(17, 207, 191,.7);
+}
+.button-emphasize i {
+	color: gba(17, 207, 191,.7) !important;
+}
+.button:hover {
+	cursor: pointer;
+	background: #11cfbf;
+		transition: all .5s;
+	-webkit-transition: all .5s;
+	border-color: #11cfbf;
+}
+.button-trans {
+	border:none;
+	background-color:transparent;
+	margin-right: 12px;
+	padding: 8px 20px;
+	font-weight: 400;
+	color: #777;
+	line-height: 20px;
+	@include serif;
+	font-style: italic;
+	margin-top: 8px;
+	opacity: 1;
+	display: inline-block;
+		transition: all .5s;
+	-webkit-transition: all .5s;
+
+}
+.button-trans:hover {
+	cursor: pointer;
+	color: #11cfbf;
+		transition: all .5s;
+	-webkit-transition: all .5s;
+}
+.about,.upload {
+	@media screen and (max-width: 767px) {
+		display: none !important;
+	}
+}
+.button-primary {
+	background: #11cfbf;
+	border-color: #11cfbf;
+	text-decoration: none;
+}
+.button-primary:hover {
+	background: transparent !important;
+	color: #fff;
+}
+button.secondary {
+	background-color: #454545;
+	border: 1px solid rgba(235,235,235,.2);
+	font-size: 16px;
+}

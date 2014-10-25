@@ -1,0 +1,1324 @@
+/*
+Theme Name: Puesto master
+Theme URI: http://eatpuesto.com
+Author: ripe
+Author URI: http://ripe.com/
+Description: <strong>MASTER THEME: SHOULD NEVER BE DELETED.</strong> A custom theme developed for eatpuesto.com.
+Version: 0.0.0
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: custom
+
+Based on:
+BlankSlate WordPress Theme © 2011-2013 TidyThemes, distributed under the terms of the GNU GPL
+*/
+
+/*
+==========================================================================
+	CSS NAVIGATION KEY
+	Use your text editor's find function and search for [these things]
+
+		[font]		@font-face declarations
+		[sass]		SASS - Mixins, variables, etc.
+		[bs]			Base Styles - HTML redeclaration
+		
+							Layout
+		[s]				Structure - Main layout structure, high level stuff.
+		[pages]		Specific pages
+		[mq]			Media Queries
+		
+		[util]		Utility - Helper classes
+		[print]		Print Styles
+==========================================================================
+*/
+
+/*
+==========================================================================
+	Fonts [font]
+	(Check out the SASS mixins for easy ways to call diz nonsense)
+==========================================================================
+*/
+
+// @font-face {
+// 	font-family: 'Puesto-Iconset';
+// 	src:url('fonts/Puesto-Iconset.eot');
+// 	src:url('fonts/Puesto-Iconset.eot?#iefix') format('embedded-opentype'),
+// 		url('fonts/Puesto-Iconset.woff') format('woff'),
+// 		url('fonts/Puesto-Iconset.ttf') format('truetype'),
+// 		url('fonts/Puesto-Iconset.svg#Puesto-Iconset') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+// @font-face {
+//     font-family: 'GoudySansFSItalic';
+//     src: url('fonts/GoudySans-Italic-webfont.eot');
+//     src: url('fonts/GoudySans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('fonts/GoudySans-Italic-webfont.woff') format('woff'),
+//          url('fonts/GoudySans-Italic-webfont.ttf') format('truetype'),
+//          url('fonts/GoudySans-Italic-webfont.svg#GoudySansFSItalic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'GoudySansFSBoldItalic';
+//     src: url('fonts/GoudySans-BoldItalic-webfont.eot');
+//     src: url('fonts/GoudySans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('fonts/GoudySans-BoldItalic-webfont.woff') format('woff'),
+//          url('fonts/GoudySans-BoldItalic-webfont.ttf') format('truetype'),
+//          url('fonts/GoudySans-BoldItalic-webfont.svg#GoudySansFSBoldItalic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// 	PUESTO ICONSET KEY
+//	
+//	Social Media
+//		Yelp													&#xe002;
+//		Twitter 											&#xe003;
+//		Trip Advisor									&#xe004;
+//		Pinterest											&#xe005;
+//		Instagram											&#xe006;
+//		Foursquare										&#xe007;
+//		Facebook											&#xe008;
+//	Menu
+//		Zucchini & Cactus / Veggie		&#xe009;
+//		Potato Soy Chorizo						&#xe00a;
+//		Paletas												&#xe00b;
+//		Mexican Street Cup						&#xe00c;
+//		Grilled Shrimp								&#xe00d;
+//		Grilled Salmon								&#xe00e;
+//		Drink cup (froz. horch.)			&#xe00f;
+//		Chicken al Pastor							&#xe010;
+//		Carnitas (pig)								&#xe011;
+//		Carne Asada (cow)							&#xe012;
+//		Full taco											&#xe000;
+//		Cocktail glass								&#xe017;
+//		
+//	Locations
+//		San Diego											&#xe013;
+//		La Jolla											&#xe014;
+//	Misc
+//		Logo													&#xe001;
+//		Lunch time clock							&#xe015;
+//		Dinner time clock							&#xe016;
+//		Plus circle										&#xe603;
+//		Minus circle									&#xe604;
+//		Nav handle										&#xe605;
+//	Twitter
+//		Favorite											&#xe600;
+//		Reply													&#xe601;
+//		Retweet												&#xe602;
+
+// .icon {
+// 	font-family: 'Puesto-Iconset';
+// 	line-height: 1;
+// 	text-decoration: none;
+// 	text-shadow: none;
+// }
+
+/*
+==========================================================================
+	SASS [sass]
+==========================================================================
+*/
+
+// Variables
+// $black: #000000;
+// 	$black-90: rgba($black,0.90);
+// 	$black-75: rgba($black,0.75);
+// 	$black-50: rgba($black,0.5);
+// 	$black-25: rgba($black,0.25);
+// $white: #fff;
+// 	$white-90: rgba($white,0.90);
+// 	$white-75: rgba($white,0.75);
+// 	$white-50: rgba($white,0.5);
+// 	$white-25: rgba($white,0.25);
+// $grellow: #e4e238;
+// 	$grellow-90: rgba($grellow,0.90);
+// 	$grellow-75: rgba($grellow,0.75);
+// 	$grellow-50: rgba($grellow,0.5);
+// 	$grellow-25: rgba($grellow,0.25);
+// $blue: #39b7e4;
+// 	$blue-90: rgba($blue,0.90);
+// 	$blue-75: rgba($blue,0.75);
+// 	$blue-50: rgba($blue,0.5);
+// 	$blue-25: rgba($blue,0.25);
+// $magenta: #ec008c;
+// 	$magenta-90: rgba($magenta,0.90);
+// 	$magenta-75: rgba($magenta,0.75);
+// 	$magenta-50: rgba($magenta,0.5);
+// 	$magenta-25: rgba($magenta,0.25);
+// $green: #5dcc5a;
+// 	$green-90: rgba($green,0.90);
+// 	$green-75: rgba($green,0.75);
+// 	$green-50: rgba($green,0.5);
+// 	$green-25: rgba($green,0.25);
+// $orange: #fb5d1a;
+// 	$orange-90: rgba($orange,0.90);
+// 	$orange-75: rgba($orange,0.75);
+// 	$orange-50: rgba($orange,0.5);
+// 	$orange-25: rgba($orange,0.25);
+// $slate: #445155;
+// 	$slate-90: rgba($slate,0.90);
+// 	$slate-75: rgba($slate,0.75);
+// 	$slate-50: rgba($slate,0.5);
+// 	$slate-25: rgba($slate,0.25);
+
+// $huge: 48px;
+// $large: 36px;
+// $medium: 28px;
+// $default: 24px;
+// $small: 18px;
+// $tiny: 14px;
+
+// Mixins
+// @mixin background-cover {
+// 		-webkit-background-size: cover;
+// 		-moz-background-size: cover;
+// 		-o-background-size: cover;
+// 		background-size: cover;
+// }
+
+
+// @mixin font-iconset {
+// 	font-family: 'Puesto-Iconset';
+// 	line-height: 1;
+// 	text-decoration: none;
+// 	text-shadow: none;
+// }
+// @mixin font-bailey-book {
+// 	font-family:"ITCBaileySansW01-Book", Helvetica, Verdana, sans-serif;
+// 	font-weight: normal;
+// }
+// @mixin font-bailey-book-italic {
+// 	font-family:"ITCBaileySansW01-BookIt", Helvetica, Verdana, sans-serif;
+// 	font-weight: normal;
+// }
+// @mixin font-bailey-bold {
+// 	font-family:"ITCBaileySansW01-Bold", Helvetica, Verdana, sans-serif;
+// 	font-weight: normal;
+// }
+// @mixin font-bailey-bold-italic {
+// 	font-family:"ITCBaileySansW01-BoldIt", Helvetica, Verdana, sans-serif;
+// 	font-weight: normal;
+// }
+// @mixin font-goudy-italic {
+// 	font-family:"GoudySansFSItalic", Helvetica, Verdana, sans-serif;
+// 	font-weight: normal;
+// }
+// @mixin font-goudy-bold-italic {
+// 	font-family:"GoudySansFSBoldItalic", Helvetica, Verdana, sans-serif;
+// 	font-weight: normal;
+// }
+
+// @mixin text-shadow {
+// 	text-shadow: 1px 1px 5px $black-50;
+// 	filter: dropshadow(color=#000000, offx=1, offy=1);
+// }
+
+// @mixin font-size-huge {
+// 	font-size: $huge;
+// 	line-height: $huge * 1.15;
+// }
+// @mixin font-size-large {
+// 	font-size: $large;
+// 	line-height: $large * 1.15;
+// }
+// @mixin font-size-medium {
+// 	font-size: $medium;
+// 	line-height: $medium * 1.15;
+// }
+// @mixin font-size-default {
+// 	font-size: $default;
+// 	line-height: $default * 1.15;
+// }
+// @mixin font-size-small {
+// 	font-size: $small;
+// 	line-height: $small * 1.15;
+// }
+// @mixin font-size-tiny {
+// 	font-size: $tiny;
+// 	line-height: $tiny * 1.15;
+// }
+
+/*
+==========================================================================
+	BASE STYLES [bs]
+	Cribbed from the html5bp.
+==========================================================================
+*/
+
+// /* Global Box Sizing and Font-Smoothing */	 
+// *, *:after, *:before {
+// 	box-sizing:border-box;
+// 	-webkit-box-sizing:border-box;
+// 	-moz-box-sizing:border-box;
+// 	-webkit-font-smoothing:antialiased;
+// 	-moz-font-smoothing:antialiased;
+// 	-o-font-smoothing:antialiased;
+// 	font-smoothing:antialiased;
+// 	text-rendering:optimizeLegibility;
+// }
+
+// html,
+// button,
+// input,
+// select,
+// textarea {
+// 	color: #222;
+// }
+
+// html {
+// 	// font-size: 1em;
+// 	// line-height: 1.4;
+// }
+
+// a {
+// 	color: $grellow; 
+// 	text-decoration: none;
+
+// 	-webkit-transition: all 250ms ease-in-out;
+// 	-moz-transition: all 250ms ease-in-out;
+// 	-ms-transition: all 250ms ease-in-out;
+// 	-o-transition: all 250ms ease-in-out;
+// 	transition: all 250ms ease-in-out;
+
+// 	&:hover {
+// 		color: $white;
+// 	}
+
+// 	img {
+// 		-webkit-transition: all 100ms ease-in-out;
+// 		-moz-transition: all 100ms ease-in-out;
+// 		-ms-transition: all 100ms ease-in-out;
+// 		-o-transition: all 100ms ease-in-out;
+// 		transition: all 100ms ease-in-out;
+// 	}
+// }
+
+// address {
+// 	font-style: normal;
+// }
+
+
+//  * Remove text-shadow in selection highlight: h5bp.com/i
+//  * These selection rule sets have to be separate.
+//  * Customize the background color to match your design.
+ 
+// ::-moz-selection {
+// 	background: #b3d4fc;
+// 	text-shadow: none;
+// }
+// ::selection {
+// 	background: #b3d4fc;
+// 	text-shadow: none;
+// }
+
+// h1 {
+// 	@include font-goudy-bold-italic;
+// 	@include font-size-huge;
+// }
+// h2 {
+// 	@include font-goudy-bold-italic;
+// 	@include font-size-huge;
+// }
+// h3 {
+// 	@include font-goudy-italic;
+// 	@include font-size-large;
+// 	b, strong {
+// 		@include font-goudy-bold-italic;
+// 	}
+// }
+// h4 {
+// 	@include font-size-medium;
+// 	@include font-bailey-bold;
+// }
+// h5 {
+// 	@include font-size-medium;
+// 	@include font-bailey-book;
+// 	b, strong {
+// 		@include font-bailey-bold;		
+// 	}
+// }
+// h6 {
+// 	@include font-size-default;
+// 	@include font-bailey-book;
+// }
+
+// /*
+//  * A better looking default horizontal rule
+//  */
+// hr {
+// 	display: block;
+// 	height: 1px;
+// 	border: 0;
+// 	border-top: 1px solid #ccc;
+// 	margin: 1em 0;
+// 	padding: 0;
+// }
+
+// /*
+//  * Remove the gap between images, videos, audio and canvas and the bottom of
+//  * their containers: h5bp.com/i/440
+//  */
+// audio,
+// canvas,
+// img,
+// video {
+// 	vertical-align: middle;
+// }
+
+// /*
+//  * Remove default fieldset styles.
+//  */
+// fieldset {
+// 	border: 0;
+// 	margin: 0;
+// 	padding: 0;
+// }
+
+// /*
+//  * Allow only vertical resizing of textareas.
+//  */
+// textarea {
+// 	resize: vertical;
+// }
+
+
+/*
+==========================================================================
+	LAYOUT
+		STRUCTURE [s]
+==========================================================================
+*/
+
+html {
+	// height: 100%;
+	// margin: 0;
+	// padding: 0;
+	// @include font-bailey-book;
+	// font-size: $default;
+	// background: $white;
+	// color: $white;
+	
+	// body {
+	// 	@extend html;
+	// }
+
+	// #wrapper {
+	// 	height: 100%;
+	// }
+	
+	// header#header {
+	// 	@include font-goudy-bold-italic;
+
+	// 	section#branding {
+	// 		h1 {
+	// 			margin: 0;
+	// 			text-indent: -99999px;
+	// 			background: url(img/branding-logo-144x170.png) no-repeat center center;
+	// 			@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+	// 				background: url('img/branding-logo-144x170@2x.png') no-repeat center center;
+	// 				background-size: 100% auto;
+	// 			}
+	// 		}
+	// 		#site-description {
+	// 			font-size: $medium + 2;
+	// 			@include text-shadow;
+	// 			a {
+	// 				color: $white;
+	// 			}
+	// 		}
+	// 	}
+
+	// 	nav#main-nav {
+	// 		@include text-shadow;
+	// 		ul {
+	// 			list-style-type: none;
+	// 			padding: 0;
+	// 		}
+
+	// 		a {
+	// 			color: $white;
+	// 			text-decoration: none;
+	// 		}
+
+	// 		.handle {
+	// 			display: none;
+	// 		}
+	// 	}
+	// }
+
+	// section#img-holder {
+	// 	background: url(img/header-background-temp-2404x1600.jpg) no-repeat;
+	// 	@include background-cover;
+	// }
+
+	// div.twitter {
+	// 	background: $magenta;
+
+	// 	a {
+	// 		color: $grellow;
+	// 		text-decoration: none;
+	// 		&:hover {
+	// 			color: $white;
+	// 		}
+	// 	}
+
+	// 	h4 {
+	// 		min-height: 40px;
+	// 		margin: 0;
+	// 		padding: 10px 0 0 60px;
+
+	// 		@include font-size-large;
+	// 		background: url(img/icon-twitter-yellow-50x40.png) no-repeat left center;
+	// 		@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+	// 			background: url(img/icon-twitter-yellow-50x40@2x.png) no-repeat left center;
+	// 			background-size: 50px 40px;
+	// 		}
+
+
+	// 		a {
+	// 			color: $white;
+	// 			&:hover {
+	// 				color: $grellow;
+	// 			}
+	// 		}
+	// 	}
+
+	// 	ul.tweet_list {
+	// 		padding: 0;
+	// 		@include font-goudy-italic;
+	// 		font-size: $medium;
+	// 		list-style-type: none;
+
+	// 		a {
+	// 			@include font-goudy-bold-italic;
+				
+	// 			&.tweet_action {
+	// 				color: $white-50;
+	// 				@include font-iconset;
+	// 				&:hover {
+	// 					color: $grellow;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// 	.tweet_time {
+	// 		@include font-goudy-italic;
+	// 		font-size: $tiny;
+	// 		a {
+	// 			color: $white-50;
+	// 			&:hover {
+	// 				color: $grellow;
+	// 			}
+	// 		}
+	// 	}
+	// 	.actions {
+	// 		margin: 5px 0 0 20px;
+	// 		display: inline;
+	// 		@include font-size-small;
+	// 	}
+	// }
+	// div.video {
+	// 	background: $green;
+	// }
+
+	// footer#footer {
+	// 	background: $grellow;
+	// 	color: $slate;
+
+	// 	a {
+	// 		color: $magenta;
+	// 		&:hover {
+	// 			color: $blue;
+	// 		}
+	// 	}
+
+	// 	.contact {
+	// 		h3 {
+	// 			margin: 0;
+	// 		}
+	// 		.email-link {
+	// 			@include font-goudy-bold-italic;
+	// 			@include font-size-large;
+	// 		}
+	// 		.work {
+	// 			margin-top: 40px;
+	// 			display: block;
+	// 			@include font-goudy-italic;
+	// 			a {
+	// 				@include font-goudy-bold-italic;
+	// 			}
+	// 		}
+	// 	}
+
+	// 	.location {
+	// 		@include font-size-small;
+	// 		@include font-bailey-book;
+			
+	// 		h5 {
+	// 			margin: 0 0 20px 0;
+	// 			@include font-goudy-bold-italic;
+	// 		}
+	// 		.address {
+	// 			margin: 0 0 20px 0;
+	// 			display: block;
+	// 			color: $slate;
+	// 			&:hover {
+	// 				color: $blue;
+	// 			}
+	// 		}
+	// 	}
+	// 	.social {
+	// 		padding-top: 20px;
+	// 		@include font-iconset;			
+
+	// 		ul {
+	// 			width: 150px;
+	// 			margin: 0;
+	// 			padding: 0;
+	// 			position: relative;
+	// 			list-style-type: none;
+
+	// 			a {
+	// 				position: absolute;
+	// 				font-size: $medium;
+	// 			}
+	// 		}
+
+	// 		a.twitter {
+	// 			top: -20px; left: 70%;
+	// 		}
+	// 		a.facebook {
+	// 			top: -5px; left: 30%;
+	// 		}
+	// 		a.foursquare {
+	// 			top: 95px; left: 0;
+	// 		}
+	// 		a.trip-advisor {
+	// 			top: 40px; left: 135%;
+	// 		}
+	// 		a.instagram {
+	// 			top: 40px; left: 5%; 
+	// 		}
+	// 		a.pinterest {
+	// 			top: 95px; left: 140%;
+	// 		}
+	// 		a.yelp {
+	// 			top: -5px; left: 110%;
+	// 		}
+
+	// 		.taco {
+	// 			width: 150px;
+	// 			margin-left: 45px;
+	// 			color: $magenta;
+	// 			font-size: 150px;
+	// 		}
+	// 	}
+	// }
+
+	// PAGE SPECIFIC
+
+	// body.home {
+
+	// 	// section#img-holder {
+	// 	// 	height: 69.9%;
+	// 	// 	min-height: 254px;
+	// 	// }
+	// 	// section#content {
+	// 	// 	height: 30%;
+	// 	// }
+	// 	.twitter, .video {
+	// 		min-height: 100%;
+	// 	}
+
+	// 	// .instagram {
+	// 	// 	clear: both;
+	// 	// 	overflow: auto;
+	// 	// 	background: $grellow;
+
+	// 	// 	.description {
+	// 	// 		padding: 10px;
+	// 	// 		display: block;
+
+	// 	// 		background: $orange;
+	// 	// 		@include font-goudy-bold-italic;
+	// 	// 		@include font-size-medium;
+	// 	// 		text-align: center;
+	// 	// 		&:hover {
+	// 	// 			background: $orange-90;
+	// 	// 		}
+	// 	// 	}
+	// 	// 	.images {
+	// 	// 		a {
+
+	// 	// 			&:hover {
+	// 	// 				position: relative;
+	// 	// 				z-index: 9999;
+	// 	// 				img {
+	// 	// 					width: 110%;
+	// 	// 					margin-top: -10%;
+	// 	// 					margin-left: -5%;
+	// 	// 					// margin-bottom: -5%;
+	// 	// 				}
+	// 	// 			}
+	// 	// 			&:nth-child(n+7) { // Hide any images greater than 6 (we load 4 extra becaues images set to private will not load, but consume a count)
+	// 	// 				display: none;
+	// 	// 			}
+
+	// 	// 			img {
+	// 	// 				width: 100%;
+	// 	// 				height: auto;
+	// 	// 			}
+	// 	// 		}
+	// 	// 	}
+	// 	// }
+	// }
+
+	body.menu {
+		
+		// .nav {
+		// 	background: $orange;
+		// }
+
+		// .group-ordering {
+		// 	background: $blue;
+		// }
+
+		// section#content {
+		// 	header {
+		// 		padding: 20px 40px;
+		// 		cursor: pointer;
+
+		// 		h2 {
+		// 			display: inline-block;
+		// 			.icon {
+		// 				margin-right: 25px;
+		// 				position: relative;
+		// 				top: 3px;
+		// 			}
+		// 		}
+		// 		.price {
+		// 			padding-top: 8px;
+		// 			display: inline-block;
+		// 			float: right;
+		// 			@include font-size-large;
+		// 		}
+		// 	}
+		// }
+
+		// h2 {
+		// 	margin: 0;
+		// }
+
+		// .price {
+		// 	@include font-goudy-italic;
+		// 	b {
+		// 		@include font-goudy-bold-italic;
+		// 	}
+		// }
+
+		// .content {
+		// 	padding: 0 40px 40px;
+		// 	display: none;
+		// }
+
+		// section {
+		// 	-webkit-transition: all 250ms ease-in-out;
+		// 	-moz-transition: all 250ms ease-in-out;
+		// 	-ms-transition: all 250ms ease-in-out;
+		// 	-o-transition: all 250ms ease-in-out;
+		// 	transition: all 250ms ease-in-out;
+
+		// 	&.magenta {
+		// 		background: $magenta;
+		// 		&.hover {
+		// 			background: $magenta-75;
+		// 		}
+		// 	}
+		// 	&.green {
+		// 		background: $green;
+		// 		&.hover {
+		// 			background: $green-75;
+		// 		}
+		// 	}
+		// 	&.blue {
+		// 		background: $blue;
+		// 		&.hover {
+		// 			background: $blue-75;
+		// 		}
+		// 	}
+		// 	&.orange {
+		// 		background: $orange;
+		// 		&.hover {
+		// 			background: $orange-75;
+		// 		}
+		// 	}
+		// }
+
+		// .byline, .footer {
+		// 	display: block;
+		// 	clear: both;
+		// 	@include font-goudy-bold-italic;
+		// }
+		// .footer {
+		// 	text-align: right;
+		// }
+
+		// .item {
+		// 	width: 90%;
+		// 	clear: both;
+		// 	h4 {
+		// 		margin-bottom: 0;
+		// 	}
+		// 	.icon {
+		// 		margin: 0 15px 25px 0;
+		// 		float: left;
+				
+		// 		@include font-iconset;
+		// 		font-size: 65px;
+		// 	}
+		// 	.description {
+		// 		@include font-goudy-italic;
+		// 		@include font-size-small;
+		// 	}
+		// 	.sub-item {
+		// 		display: block;
+		// 		padding-left: 30px;
+				
+		// 		b {
+		// 			@include font-bailey-bold;
+		// 		}
+		// 	}
+		// }
+	}
+
+	body.locations {
+
+		// .magenta {
+		// 	background: $magenta;
+		// }
+		// .green {
+		// 	background: $green;
+		// }
+		// .blue {
+		// 	background: $blue;
+		// }
+		// .orange {
+		// 	background: $orange;
+		// }
+
+		// .location {
+		// 	h2 {
+		// 		margin-top: 0;
+		// 	}
+
+		// 	address {
+		// 		margin: 0;
+		// 		a {
+		// 			color: $white;
+		// 			&:hover {
+		// 				color: $grellow;
+		// 			}
+		// 		}
+		// 		p {
+		// 			margin: inherit;
+		// 		}
+		// 	}
+		// }
+	}
+}
+
+/* NO-JS Fixes */
+
+// html.no-js {
+// 	body.menu {
+// 		header {
+// 			.icon {
+// 				display: none;
+// 			}
+// 		}
+// 		.content {
+// 			display: block;
+// 		}
+// 	}
+// }
+
+/*
+==========================================================================
+	LAYOUT
+		MEDIA QUERIES [mq]
+==========================================================================
+*/
+/* One col (mobile browsers) */
+@media screen and (max-width: 767px) {
+	html {
+		// .container {
+		// 	padding: 20px;
+		// }
+
+		// header#header {
+		// 	// height: 40px;
+		// 	// position: fixed;
+		// 	// top: 0; right: 0; left: 0;
+
+		// 	// background: $grellow;
+		// 	// @include background-cover;
+		// 	// @include font-goudy-bold-italic;
+		// 	// -webkit-box-shadow:  0px 5px 5px 0px rgba(0, 0, 0, .25);
+		// 	// box-shadow:  0px 5px 5px 0px rgba(0, 0, 0, .25);
+
+		// 	// section#branding {
+		// 	// 	// h1 {
+		// 	// 	// 	width: 50px;
+		// 	// 	// 	height: 59px;
+		// 	// 	// 	margin-top: 10px;
+		// 	// 	// 	margin-left: 10px;
+		// 	// 	// 	background-size: 100% auto;
+		// 	// 	// }
+		// 	// 	#site-description {
+		// 	// 		display: none;
+		// 	// 	}
+		// 	// }
+
+		// 	nav#main-nav {
+		// 		// min-width: 280px;
+		// 		// position: fixed;
+		// 		// top: 0; bottom: 0; left: 100%;
+		// 		// @include text-shadow;
+
+		// 		// background: $blue;
+
+		// 		// ul {
+		// 		// 	list-style-type: none;
+		// 		// 	padding: 0;
+		// 		// }
+
+		// 		// a {
+		// 		// 	color: $white;
+		// 		// 	text-decoration: none;
+		// 		// }
+
+		// 		.handle {
+		// 			display: block;
+		// 			position: absolute;
+		// 			top: 8px; left: -34px;
+		// 			color: $orange;
+		// 		}
+		// 	}
+		// }
+
+		// section#img-holder {
+		// 	height: 200px;
+		// }
+
+		// footer#footer {
+
+		// 	// .location {
+		// 	// 	margin-bottom: 20px;
+		// 	// }
+			
+		// 	.social {
+		// 		// margin-bottom: 40px;
+		// 		// ul {
+		// 		// 	width: auto;
+		// 		// }
+		// 		// li {
+		// 		// 	display: inline;
+		// 		// }
+		// 		// a.twitter, a.facebook, a.foursquare, a.trip-advisor, a.instagram, a.pinterest, a.yelp {
+		// 		// 	position: static;  
+		// 		// }
+		// 	}
+		// 	.taco {
+		// 		width: 150px;
+		// 		margin-left: 45px;
+		// 		color: $magenta;
+		// 		font-size: 150px;
+		// 	}
+		// 	.taco {
+		// 		display: none;
+		// 	}
+		// }
+
+		// Page specific
+		// body.home {
+		// 	.instagram {
+		// 		.images {
+		// 			a {
+		// 				// width: 50%;
+		// 				// height: auto;
+		// 				// display: block;
+		// 				// float: left;
+
+		// 				&:hover {
+		// 					position: static;
+
+		// 					img {
+		// 						width: 100%;
+		// 						margin: 0;
+		// 					}
+		// 				}
+
+		// 				&:nth-child(n+7) { // Hide any images greater than 6 (we load 4 extra becaues images set to private will not load, but consume a count)
+		// 					display: none;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+	}
+}
+
+/* Compressed (tablets, small browsers) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	html {
+		// .container {
+		// 	padding: 20px;
+		// }
+
+		header#header {
+			// position: relative;
+
+			// section#branding {
+			// 	// position: relative;
+
+			// 	h1 {
+			// 		// width: 100px;
+			// 		// height: 118px;
+			// 		// position: absolute;
+			// 		// top: 40px;
+			// 		// left: 40px;
+			// 		// background-size: 100% auto;
+			// 	}
+
+			// 	#site-description {
+			// 		position: absolute;
+			// 		top: 80px;
+			// 		left: 170px;
+			// 		font-size: $default;
+			// 	}
+			// }
+
+			nav#main-nav {
+				// position: absolute;
+				// top: 57px;
+				// right: 40px;
+				// text-align: right;
+
+				// li {
+				// 	margin: 0 0 0 30px;
+				// 	display: inline;
+				// 	font-weight: 300 !important;
+				// 	font-size: $default;
+				// }
+			}
+		}
+
+		// Page specific
+		// body.home {
+		// 	.instagram {
+		// 		.images {
+		// 			a {
+		// 				width: 16.6666666667%;
+		// 				height: auto;
+		// 				display: block;
+		// 				float: left;
+
+		// 				&:nth-child(n+7) { // Hide any images greater than 6 (we load 4 extra becaues images set to private will not load, but consume a count)
+		// 					display: none;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+	}
+}
+
+/* Big'uns (desktop) */
+@media screen and (min-width: 1025px) {
+	html {
+
+		// .container {
+		// 	padding: 40px;
+		// }
+
+		// header#header {
+		// 	// position: relative;
+
+		// 	// section#branding {
+		// 	// 	// position: relative;
+
+		// 	// 	h1 {
+		// 	// 		// width: 144px;
+		// 	// 		// height: 170px;
+		// 	// 		// position: absolute;
+		// 	// 		// top: 40px;
+		// 	// 		// left: 40px;
+		// 	// 	}
+
+		// 	// 	#site-description {
+		// 	// 		position: absolute;
+		// 	// 		top: 80px;
+		// 	// 		left: 210px;
+		// 	// 	}
+		// 	// }
+
+		// 	nav#main-nav {
+		// 		// position: absolute;
+		// 		// top: 70px;
+		// 		// right: 40px;
+		// 		// text-align: right;
+
+		// 		li {
+		// 			margin: 0 0 0 30px;
+		// 			display: inline;
+		// 			font-weight: 300 !important;
+		// 		}
+		// 	}
+		// }
+
+		// section#img-holder {
+		// 	height: 30%;
+		// 	min-height: 254px;
+		// }
+
+		// footer#footer {
+		// 	// .location {
+		// 	// 	position: relative;
+		// 	// 	left: 35%;
+		// 	// }
+		// 	.contact {
+		// 		position: relative;
+		// 		left: -65%;
+		// 	}
+		// 	// .social {
+		// 	// 	position: relative;
+		// 	// 	left: 35%;
+		// 	// }
+		// }
+		// Page specific
+		// body.home {
+
+		// 	section#img-holder {
+		// 		height: 69.9%;
+		// 	}
+		// 	.instagram {
+		// 		.images {
+		// 			a {
+		// 				width: 16.6666666667%;
+		// 				height: auto;
+		// 				display: block;
+		// 				float: left;
+
+		// 				&:nth-child(n+7) { // Hide any images greater than 6 (we load 4 extra becaues images set to private will not load, but consume a count)
+		// 					display: none;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+	}
+}
+
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+		/* Style adjustments for high resolution devices */
+}
+
+
+
+
+
+
+
+
+
+/*
+==========================================================================
+	UTILITY [util]
+	Cribbed from html5bp.
+==========================================================================
+*/
+/* 
+ * Fill items (usually links that need to take up 100% of their parent)
+ */
+
+.fill {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+		background-color: transparent;
+		border: 0;
+		overflow: hidden;
+		/* IE 6/7 fallback */
+		*text-indent: -9999px;
+}
+
+.ir:before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+		display: none !important;
+		visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+		visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+// .clearfix:before,
+// .clearfix:after {
+// 		content: " "; /* 1 */
+// 		display: table; /* 2 */
+// }
+
+// .clearfix:after {
+// 		clear: both;
+// }
+
+// /*
+//  * For IE 6/7 only
+//  * Include this rule to trigger hasLayout and contain floats.
+//  */
+
+// .clearfix {
+// 		*zoom: 1;
+// }
+
+
+// /*
+// ==========================================================================
+// 	PRINT STYLES [print]
+// 	Cribbed from html5bp.
+// ==========================================================================
+// */
+
+// @media print {
+// 		* {
+// 				background: transparent !important;
+// 				color: #000 !important; /* Black prints faster: h5bp.com/s */
+// 				box-shadow: none !important;
+// 				text-shadow: none !important;
+// 		}
+
+// 		a,
+// 		a:visited {
+// 				text-decoration: underline;
+// 		}
+
+// 		a[href]:after {
+// 				content: " (" attr(href) ")";
+// 		}
+
+// 		abbr[title]:after {
+// 				content: " (" attr(title) ")";
+// 		}
+
+// 		/*
+// 		 * Don't show links for images, or javascript/internal links
+// 		 */
+
+// 		.ir a:after,
+// 		a[href^="javascript:"]:after,
+// 		a[href^="#"]:after {
+// 				content: "";
+// 		}
+
+// 		pre,
+// 		blockquote {
+// 				border: 1px solid #999;
+// 				page-break-inside: avoid;
+// 		}
+
+// 		thead {
+// 				display: table-header-group; /* h5bp.com/t */
+// 		}
+
+// 		tr,
+// 		img {
+// 				page-break-inside: avoid;
+// 		}
+
+// 		img {
+// 				max-width: 100% !important;
+// 		}
+
+// 		@page {
+// 				margin: 0.5cm;
+// 		}
+
+// 		p,
+// 		h2,
+// 		h3 {
+// 				orphans: 3;
+// 				widows: 3;
+// 		}
+
+// 		h2,
+// 		h3 {
+// 				page-break-after: avoid;
+// 		}
+// }

@@ -1,0 +1,55 @@
+#about {
+	@include easing;
+	width: 100%;
+	height: 520px;
+	text-align: center;
+	padding-top: 5.7%;
+	position: fixed;
+	top: -560px;
+	left: 0;
+	background: rgba(239,243,242,.96);
+	z-index: 2;
+	visibility: hidden;
+
+}
+.offCanvasPanel {
+	
+}
+.offcanvas-visible {
+	@include easing;
+	top: 0px !important;
+	visibility: visible !important;
+}
+.about-container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.about-container p {
+	max-width: 900px;
+	text-align: left !important;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	@include sans-serif;
+	font-size: 18px;
+	color: #999;
+	line-height: 1.3;
+}
+#submit-track {
+	transition: all .5s;
+    -webkit-transition: all .5s;
+	width: 100%;
+	height: 600px;
+	text-align: center;
+	padding-top: 5.7%;
+	position: fixed;
+	top: -600px;
+	left: 0;
+	background: rgba(239,243,242,.96);
+	z-index: 2;
+	visibility: hidden;
+}
+#form--wrapper {
+	padding-top: 20px;
+	width: 55%;
+	margin: 0 auto;
+}

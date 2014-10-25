@@ -1,0 +1,27 @@
+/*
+==========================================================================
+	FOOTER (scss/partials/_footer.scss)
+==========================================================================
+*/
+#footer {
+	margin: 0 auto;
+	max-width: 95% !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	border-top: 1px solid #bbb;
+	padding-top: 8px;
+	padding-bottom: 60px !important;
+	font-family: 'Lato', Helvetica, Arial, Sans-serif;
+	color: #999;
+	font-size: 13px;
+}
+#footer a {
+	color: #999;
+	text-decoration: none;
+}
+#footer a:Hover {
+	color: #111;
+}
+#footer a i {
+	font-size: 17px;
+}

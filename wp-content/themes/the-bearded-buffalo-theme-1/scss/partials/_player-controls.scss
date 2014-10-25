@@ -1,0 +1,118 @@
+/* ====================
+ITEM (TRACK LISTING) PLAYER CONTROLS 
+======================= */
+.playbutton {
+	width: 100%;
+	text-align: center;	
+}
+.item--play {
+	display: inline-block;
+	background-color: #11cfbf;
+	//background: rgba(255,255,255,.2);
+	padding: 10px 13px;
+	border-radius: 70%;
+	margin-bottom: 15px;
+	opacity: 0;
+	font-size: 1em;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+
+	@media screen and (max-width: 767px) {
+		opacity: 1;
+	}
+
+}
+.viewable {
+	opacity: 1;
+}
+.item--play:hover {
+	background-color: #11cfbf;
+}
+.item--play i {
+	position: relative;
+	top:3px;
+	left: 2px;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	color: #111;
+	//color: #11cfbf;
+}
+.item--play i.ss-pause {
+	left: 0px !important;
+}
+.item--play:hover i {
+	color: #111;
+}	
+.item:hover .item--play {
+	opacity: 1;
+			transition: all .7s;
+-webkit-transition: all .7s;
+}
+
+/* ====================
+DESKTOP PLAYER CONTROLS - specific to desktop player - in section#header-wrapper
+======================= */
+.desktop-player {
+	@media screen and (max-width:767px) {
+		display: none !important;
+	}
+}
+
+
+/* ====================
+MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
+======================= */
+ #player-wrapper {
+	
+	
+		display: block;
+		position: fixed;
+		height: 78px;
+		width: 100%;
+		bottom: 0;
+		background: $darkgray;
+		text-align: center;
+		padding-top: 7px;	
+}
+#player-image {
+	position: absolute;
+	width: 100%;
+	height: 78px;
+	background-size: cover !important;
+		background-position: center center !important;
+		-webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  filter: blur(50px);
+  overflow: hidden;
+}
+#player-image-cover {
+	width: 100%; 
+	height: 100%;
+	background: $black-30;
+}
+
+/* ====================
+PLAYER CONTROLS - generic to mobile and desktop
+======================= */
+.player-control {
+	display: inline-block;
+	color: $white-40;
+	@include easing;
+}
+.player-control:hover {
+	color: $cyan;
+	cursor: pointer;
+	@include easing;
+}
+.skipback {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.skipforward {
+	margin-left: 5px;
+}
+.volume {
+	display: block !important;
+}

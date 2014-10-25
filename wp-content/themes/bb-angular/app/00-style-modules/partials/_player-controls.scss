@@ -1,0 +1,106 @@
+/* ====================
+ITEM (TRACK LISTING) PLAYER CONTROLS 
+======================= */
+.playbutton {
+	width: 100%;
+	text-align: center;	
+}
+.item--play {
+	display: inline-block;
+	background-color: #11cfbf;
+	//background: rgba(255,255,255,.2);
+	padding: 10px 13px;
+	border-radius: 70%;
+	margin-bottom: 15px;
+	opacity: 0;
+	font-size: 1em;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+
+	@media screen and (max-width: 767px) {
+		opacity: 1;
+	}
+
+}
+.viewable {
+	opacity: 1;
+}
+.item--play:hover {
+	background-color: #11cfbf;
+}
+.item--play i {
+	position: relative;
+	top:3px;
+	left: 2px;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	color: #111;
+	//color: #11cfbf;
+}
+.item--play i.ss-pause {
+	left: 0px !important;
+}
+.item--play:hover i {
+	color: #111;
+}	
+.item:hover .item--play {
+	opacity: 1;
+			transition: all .7s;
+-webkit-transition: all .7s;
+}
+
+/* ====================
+DESKTOP PLAYER CONTROLS - specific to desktop player - in section#header-wrapper
+======================= */
+.desktop-player {
+	@media screen and (max-width:767px) {
+		display: none !important;
+	}
+}
+.player-control-wrapper {
+	margin-left: 30px;
+}
+
+/* ====================
+MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
+======================= */
+ #mobile-player-wrapper {
+	display: none;
+	@media screen and (max-width:767px) { 
+		display: block;
+		position: fixed;
+		height: 88px;
+		width: 100%;
+		bottom: 0;
+		background: $darkgray;
+		text-align: center;
+		padding-top: 20px;
+		
+	}
+}
+
+/* ====================
+PLAYER CONTROLS - generic to mobile and desktop
+======================= */
+.player-control {
+	display: inline-block;
+	color: $white-40;
+	@include easing;
+}
+.player-control:hover {
+	color: $cyan;
+	cursor: pointer;
+	@include easing;
+}
+.skipback {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.skipforward {
+	margin-left: 5px;
+}
+.playpause {
+	margin-right: 14px;
+	margin-left: 14px;
+	
+}
