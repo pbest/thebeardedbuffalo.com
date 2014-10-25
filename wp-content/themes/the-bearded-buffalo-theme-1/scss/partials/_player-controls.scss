@@ -63,8 +63,6 @@ DESKTOP PLAYER CONTROLS - specific to desktop player - in section#header-wrapper
 MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
 ======================= */
  #player-wrapper {
-	
-	
 		display: block;
 		position: fixed;
 		height: 78px;
@@ -73,6 +71,7 @@ MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
 		background: $darkgray;
 		text-align: center;
 		padding-top: 7px;	
+		z-index: 900;
 }
 #player-image {
 	position: absolute;

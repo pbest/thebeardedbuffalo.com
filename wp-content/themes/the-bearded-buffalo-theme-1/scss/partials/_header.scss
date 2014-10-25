@@ -3,6 +3,97 @@
 	HEADER (scss/partials/_header.scss)
 ==========================================================================
 */
+
+#header-wrapper {
+	width: 100%;
+	//padding-left: 1.5%;
+	//padding-right: 1.5%;
+	position: fixed;
+	top: 0px;
+	//bottom: -56px;
+	z-index: 9999;
+	background: rgba(34,34,34,1);
+	transition: all 250ms;
+    -webkit-transition: all 250ms;
+    //initial position
+    @media screen and (min-width: 768px) {
+         -webkit-transform: translateY(-116px);
+         -moz-transform:    translateY(-116px);
+         -ms-transform:     translateY(-116px);
+         -o-transform:      translateY(-116px);
+         transform:         translateY(-116px);
+    }     
+}
+.translateY-0px {
+	-webkit-transform: translateY(0px) !important;
+    -moz-transform:    translateY(0px) !important;
+    -ms-transform:     translateY(0px) !important;
+    -o-transform:      translateY(0px) !important;
+    transform:         translateY(0px) !important;
+    transition: all 250ms;
+    -webkit-transition: all 250ms;
+}
+#header-wrapper a {
+	text-decoration: none !important;
+}
+#header-branding {
+	opacity:.15;
+	padding-top:0px;
+	max-width:100px;
+	margin-left:3%;
+	overflow: auto;
+	margin: auto;
+  	position: absolute;
+  	top: 10px; left: 0; bottom: 0; right: 0;
+  	@media screen and (max-width:767px) {
+  		max-width: 75px;
+  		top: 0px;
+  	}
+
+}
+#header-branding-label {
+	width: 70%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 5px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+#header-menu{
+	padding-top: 3px;
+	div {
+		float: left;
+	}
+}
+.header-secondary {
+	height: 25px;
+	width: 100%;
+	text-align: center;
+	overflow: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	@include serif;
+	font-style: italic;
+	position: relative;
+	@media screen and (max-width: 767px) {
+		margin-top: 0px;
+		margin-bottom: 13px;
+		display: none;
+	}
+}
+.header-secondaryWrapper {
+	height: 100%;
+	margin: 0 auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 5px;
+	color: $white;
+	opacity: 1;
+	position: relative;
+
+}
 header.branding {
 	width: 100%;
 	margin-left: 25px;

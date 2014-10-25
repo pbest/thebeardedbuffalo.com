@@ -90,25 +90,29 @@ var cs = (function($) {
 
 			
 
-			// FUNCTIONS
+			// INITIALIZE OUR AUDIO PLAYER
 			initJPlayer();
 
 
-			/*
-				USER INTERACTION
-			*/
-			// Click events and whatnot.
-			$('.about').click(function(){ cs.uiMod.toggleAbout(); });
-			$('#close-about').click(function() { cs.uiMod.toggleAbout(); });
-			$('.upload').click(function() { cs.uiMod.toggleUpload(); });
+			// EVENT HOOKS FOR OFF CANVAS CONTENT PANELS
+			$('.offCanvas-link').click(function(e){ 
+				e.preventDefault();
+				targetPanelID = $(this).attr('href');
+				uiMod.togglePanel(targetPanelID); 
+			});
+
+			//$('.about').click(function(){ uiMod.toggleAbout(); });
+			//$('#close-about').click(function() { uiMod.toggleAbout(); });
+			//$('.upload').click(function() { uiMod.toggleUpload(); });
+			
+			// EVENT HOOKS FOR TRACK CONTROLS
 			$('.item').click(function() { cs.track.trackClick($(this)); });
 			$('.playpause').click(function() { cs.track.spaceBar(); });
 			$('.skipforward').click(function() { cs.track.nextTrack(); });
 			$('.skipback').click(function() { cs.track.previousTrack(); });
 
 			
-			
-
+			// KEYSTROKE EVENTS FOR TRACK SKIPPING AND PLAY/PAUSE
 			$("body").keydown(function(e) {
 			  if(e.keyCode == 37) { // left
 			   		cs.track.previousTrack();
@@ -172,9 +176,9 @@ var cs = (function($) {
 
 		var showNav = function() {
   			var scrollTop = $(window).scrollTop();
-  		  	if (scrollTop > 70) {
+  		  	if (scrollTop > 570) {
       			$( "#header-wrapper" ).addClass('translateY-0px');
-    		} else if (scrollTop == 0) {
+    		} else if (scrollTop < 570) {
     			 $( "#header-wrapper" ).removeClass('translateY-0px');
    			 }
   		};
@@ -226,12 +230,22 @@ var cs = (function($) {
 			responsiveState: responsiveState
 		}
 	})();
-	/* 
-		UI Modifications 
 
-		Various functions which operate on elements to achieve visual
-		effects that are impossible to create with CSS alone.
-	*/
+
+	/* =============================================================
+		TRACK MODULE
+
+		Controls track ations:
+		trackClick
+		nextTrack
+		previousTrack
+		spaceBar
+		playTrack
+		pauseTrack
+		routeURL
+		showPlayer
+		scrollToTrack
+	================================================================ */
 	var track = (function() {
 			var init = function(e) {
 			// init stuff
@@ -256,9 +270,6 @@ var cs = (function($) {
 					// otherwise  switch track
 					playTrack(e);
 				}
-				
-
-				//console.log(event.jPlayer.status);
 			}
 
 			var nextTrack = function() {
@@ -306,9 +317,6 @@ var cs = (function($) {
 					$('.playpause').html('<i class="ss-pause"></i>');
 					$('#' + activeTrack ).find('.item--play').html('<i class="ss-pause"></i>'); //set current to pause
 				} else {  // they're playing a new song 
-					
-
-					//console.log(activeTrack);
 
 					//update mp3 to new track
 					my_jPlayer.jPlayer("setMedia", {
@@ -321,10 +329,10 @@ var cs = (function($) {
 
 					// set URL to current track and push to browser history
 					routeURL(e.data("trackid"),e.data("artist"),e.data("track"));
-					console.log(e.data("trackid"));
+					//console.log(e.data("trackid"));
 
 					imageProperty = "url('"+e.data("image")+"')";
-					console.log(imageProperty);
+					//console.log(imageProperty);
 					$('#player-image').css("background",imageProperty);
 
 					// set UI to play state, so user has affordances
@@ -342,20 +350,15 @@ var cs = (function($) {
 			}
 
 			var pauseTrack = function() { 
-				console.log("Pause me");
+				//console.log("Pause me");
 				my_jPlayer.jPlayer("pause");
 				isPlaying = false;
 				$('#' + activeTrack ).find('.item--play').html('<i class="ss-play"></i>');
-				$('.playpause').html('<i class="ss-play"></i>');
-
-				
+				$('.playpause').html('<i class="ss-play"></i>');	
 			}
 
 			var routeURL = function(trackID,trackArtist,trackTitle) {
-				
-					history.pushState({id: trackID}, null, "/development/thebeardedbuffalo.com/track/"+trackID);
-				
-				
+				history.pushState({id: trackID}, null, "/development/thebeardedbuffalo.com/track/"+trackID);
 		    	document.title = trackTitle +" by "+ trackArtist + " | Bearded Buffalo";
 			}
 
@@ -399,6 +402,30 @@ var cs = (function($) {
 				$('section#about').addClass('offcanvas-visible');				
 			}
 		}
+
+		var togglePanel = function(targetEl) {
+			//console.log(targetEl);
+			$targetEl = $(targetEl);
+			panelClass = "offCanvasPanel";
+			visibleClass = "offcanvas-visible";
+			$currentVisiblePanel = $('.' + panelClass + '.' + visibleClass);
+			animationDelay = 500;
+
+			console.log($currentVisiblePanel);
+
+			if($targetEl.hasClass(visibleClass) === true) {  // close this panel
+				$targetEl.removeClass(visibleClass);
+			} else if($currentVisiblePanel.length > 0) {  // another panel is open
+				$currentVisiblePanel.removeClass(visibleClass);
+				setTimeout(function(){
+					$targetEl.addClass(visibleClass);
+				},animationDelay);
+			} else {  // no other panels are open
+				$targetEl.addClass(visibleClass);
+			}
+		}
+
+
 		var toggleUpload = function() {
 			if($('section#submit-track').hasClass('offcanvas-visible')) {
 				$('section#submit-track').removeClass('offcanvas-visible');
@@ -411,6 +438,7 @@ var cs = (function($) {
 		return {
 			toggleAbout: toggleAbout,
 			toggleUpload: toggleUpload,
+			togglePanel: togglePanel,
 			showStickyNav: showStickyNav
 		};
 	})(); // var uiMod = (function() {
