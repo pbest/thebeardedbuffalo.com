@@ -100,3 +100,9 @@ button.secondary {
 	border: 1px solid rgba(235,235,235,.2);
 	font-size: 16px;
 }
+.button.button-active {
+	background: #11cfbf;
+		transition: all .5s;
+	-webkit-transition: all .5s;
+	border-color: #11cfbf;
+}

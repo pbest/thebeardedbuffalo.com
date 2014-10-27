@@ -27,14 +27,21 @@
 	    <!-- sticky page header & menu -->
 		<section id="header-wrapper">
 		  <div class="row-container">
-		  	<div class="player-control-wrapper pull-left">
-		  		<a class="button offCanvas-link favorites" href="#favorites"><i class="ss-heart"></i>&nbsp;&nbsp;My favorites </a>
-		  		<a class="button offCanvas-link" href="#inboxSignup"><i class="ss-icon">email</i>&nbsp;&nbsp;Get new tracks</a>
+		  	<div class="header-menu pull-left">
+		  		<div class="header-menu-item button offCanvas-link favorites" data-href="#favorites"><i class="ss-heart"></i>&nbsp;&nbsp;My favorites </div>
+		  		<div class="header-menu-item button offCanvas-link" data-href="#inboxSignup"><i class="ss-icon">email</i>&nbsp;&nbsp;Get new tracks</div>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/buffalo-light.png" id="header-branding" />
-			<div class="pull-right" id="header-menu">
-				<a class="button offCanvas-link upload" href="#submitTrack"><i class="ss-upload"></i>&nbsp;&nbsp;Submit track</a>
-				<a class="button offCanvas-link login" href="#userActions"><i class="ss-user"></i>&nbsp;&nbsp;Login/Signup </a>
+			<div class="header-menu pull-right">
+				<div class="header-menu-item button offCanvas-link upload" data-href="#submitTrack"><i class="ss-upload"></i>&nbsp;&nbsp;Submit track</div>
+				<?php if (!(current_user_can('level_0'))){ ?>
+				<div class="header-menu-item button offCanvas-link login" data-href="#userActions"><i class="ss-user"></i>&nbsp;&nbsp;Login/Signup </div>
+				<?php } else { 
+	  			$current_user = wp_get_current_user();  ?>
+	  			<div class="header-menu-item offCanvas-link header-link-loggedIn" data-href="#userActions"><?
+	  			echo get_avatar( $current_user->user_email, 32 );
+	  			echo $current_user->user_login; ?></div>
+	  			<? } ?>
 			</div>
 		 </div>
 		 <div class="header-secondary">
@@ -50,7 +57,7 @@
 		     	</div>-->
 		     	<div id="header-branding-label">The Bearded Buffalo</div>
 		     	<div class="pull-right">
-		     	     <a href="#about" class="offCanvas-link header-link">About this site<i class="ss-help"></i></a>
+		     	     <a href="#about" data-href="#about" class="header-menu-item offCanvas-link header-link">About this site<!--<i class="ss-help"></i>--></a>
 		    	</div>
 		     	<!--<div id="active-track">
 			      	<h6 id="active-track-name"></h6>

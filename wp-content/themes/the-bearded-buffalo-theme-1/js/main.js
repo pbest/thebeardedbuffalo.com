@@ -97,8 +97,9 @@ var cs = (function($) {
 			// EVENT HOOKS FOR OFF CANVAS CONTENT PANELS
 			$('.offCanvas-link').click(function(e){ 
 				e.preventDefault();
-				targetPanelID = $(this).attr('href');
-				uiMod.togglePanel(targetPanelID); 
+				$thisEl = $(this);
+				targetPanelID = $thisEl.attr('data-href');
+				uiMod.togglePanel(targetPanelID,$thisEl); 
 			});
 
 			//$('.about').click(function(){ uiMod.toggleAbout(); });
@@ -403,25 +404,34 @@ var cs = (function($) {
 			}
 		}
 
-		var togglePanel = function(targetEl) {
-			//console.log(targetEl);
+		var togglePanel = function(targetEl,$buttonEl) {
+			
+			// settings
+			activeButtonClass = "button-active";
+			$activeButtonEl = $(".header-menu-item." + activeButtonClass);
 			$targetEl = $(targetEl);
 			panelClass = "offCanvasPanel";
 			visibleClass = "offcanvas-visible";
 			$currentVisiblePanel = $('.' + panelClass + '.' + visibleClass);
 			animationDelay = 500;
 
-			console.log($currentVisiblePanel);
+			console.log($activeButtonEl);
 
+			// functionality
 			if($targetEl.hasClass(visibleClass) === true) {  // close this panel
 				$targetEl.removeClass(visibleClass);
+				$buttonEl.removeClass(activeButtonClass);
 			} else if($currentVisiblePanel.length > 0) {  // another panel is open
 				$currentVisiblePanel.removeClass(visibleClass);
+				$activeButtonEl.removeClass(activeButtonClass);
+				$buttonEl.addClass(activeButtonClass);
 				setTimeout(function(){
 					$targetEl.addClass(visibleClass);
+					
 				},animationDelay);
 			} else {  // no other panels are open
 				$targetEl.addClass(visibleClass);
+				$buttonEl.addClass(activeButtonClass);
 			}
 		}
 

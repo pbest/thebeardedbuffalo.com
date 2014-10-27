@@ -1,4 +1,5 @@
 .offCanvasPanel {
+	//display: none;
 	position: fixed;
 	left: 0;
 	top: -100%;
@@ -12,15 +13,15 @@
 	@include easing;
 }
 .offcanvas-visible {
+	//display: block;
 	@include easing;
 	top: 0px !important;
 	visibility: visible !important;
 }
 
-
-
 .panel-container {
 	max-width: 900px;
+	padding-top: 25px;
 	margin: 0 auto;
 }
 .panel-container p {

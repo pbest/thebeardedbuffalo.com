@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+    
     <header class="branding">
         <div class="branding-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo-text.png" /><Br>
@@ -47,6 +48,7 @@
                   $base_url = 'http://twitter.com/'; 
               } 
            ?>
+          <!-- // favorite post <?php wpfp_link() ?> -->
           <!-- <a class="item--submitter" href="<? echo $base_url; the_field('handle'); ?>">@<? the_field('handle'); ?></a>-->
          </div>
       </div>

@@ -2462,6 +2462,12 @@ button.secondary {
   border: 1px solid rgba(235, 235, 235, 0.2);
   font-size: 16px; }
 
+.button.button-active {
+  background: #11cfbf;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  border-color: #11cfbf; }
+
 /*
 ==========================================================================
 	HEADER (scss/partials/_header.scss)
@@ -2687,6 +2693,38 @@ hr {
 
 .header-link:hover {
   color: #11cfbf; }
+
+.header-link.button-active {
+  color: #11cfbf; }
+
+.header-link-loggedIn {
+  display: inline-block !important;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-style: normal;
+  padding-right: 9px;
+  padding-left: 5px;
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  line-height: 20px;
+  font-weight: 400;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
+  .header-link-loggedIn .avatar {
+    border-radius: 50% !important;
+    margin-right: 10px !important;
+    border: 1px solid rgba(235, 235, 235, 0.36) !important; }
+
+.avatar {
+  margin-right: 10px !important; }
+
+.header-link-loggedIn:hover {
+  cursor: pointer;
+  color: #11cfbf;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
 
 .item {
   display: block;
@@ -2939,7 +2977,8 @@ input[type="range"]::-moz-range-thumb:hover {
 .fieldgroup {
   font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif; }
 
-input[type=text] {
+input[type=text],
+input[type=password] {
   width: 47%;
   height: 40px;
   background: rgba(248, 248, 248, 0);
@@ -3027,6 +3066,7 @@ textarea {
 
 .panel-container {
   max-width: 900px;
+  padding-top: 25px;
   margin: 0 auto; }
 
 .panel-container p {

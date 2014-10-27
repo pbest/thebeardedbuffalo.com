@@ -22,6 +22,39 @@ hr {
 .header-link:hover {
 	color: $cyan;
 }
+.header-link.button-active {
+	color: $cyan;
+}
+.header-link-loggedIn {
+	display: inline-block !important;
+	@include sans-serif;
+	font-style: normal;
+	padding-right: 9px;
+	padding-left: 5px;
+	color: $white;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	line-height: 20px;
+	font-weight: 400;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+	.avatar {
+		border-radius: 50% !important;
+		margin-right: 10px !important;
+		border: 1px solid rgba(235, 235, 235, 0.36) !important;
+	}
+}
+.avatar {
+	margin-right: 10px !important;
+}
+.header-link-loggedIn:hover {
+	cursor: pointer;
+	color: $cyan;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+}
 
 // TRACK LIST
 .item { 
@@ -281,7 +314,8 @@ input[type="range"]::-moz-range-thumb:hover {
 .fieldgroup {
 	@include sans-serif;
 }
-input[type=text] {
+input[type=text], 
+input[type=password] {
 	width: 47%;
 	height: 40px;
 	background: rgba(248,248,248,.0);
