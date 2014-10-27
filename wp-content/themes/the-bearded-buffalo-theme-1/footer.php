@@ -69,7 +69,7 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/conditionizr.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.jplayer.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.velocity.min.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/60fps-scroll.js"></script>
+		<!--<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/60fps-scroll.js"></script>-->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 
 	</body>

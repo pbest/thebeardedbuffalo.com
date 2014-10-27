@@ -107,7 +107,8 @@ var cs = (function($) {
 			//$('.upload').click(function() { uiMod.toggleUpload(); });
 			
 			// EVENT HOOKS FOR TRACK CONTROLS
-			$('.item').click(function() { cs.track.trackClick($(this)); });
+			$('.container').on('click', '.item', function (){ cs.track.trackClick($(this)); });
+			//$('.item').click(function() { cs.track.trackClick($(this)); });
 			$('.playpause').click(function() { cs.track.spaceBar(); });
 			$('.skipforward').click(function() { cs.track.nextTrack(); });
 			$('.skipback').click(function() { cs.track.previousTrack(); });

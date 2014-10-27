@@ -31,7 +31,7 @@
 		  		<div class="header-menu-item button offCanvas-link favorites" data-href="#favorites"><i class="ss-heart"></i>&nbsp;&nbsp;My favorites </div>
 		  		<div class="header-menu-item button offCanvas-link" data-href="#inboxSignup"><i class="ss-icon">email</i>&nbsp;&nbsp;Get new tracks</div>
 			</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/img/buffalo-light.png" id="header-branding" />
+			<a href="<? echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/buffalo-light.png" id="header-branding" /></a>
 			<div class="header-menu pull-right">
 				<div class="header-menu-item button offCanvas-link upload" data-href="#submitTrack"><i class="ss-upload"></i>&nbsp;&nbsp;Submit track</div>
 				<?php if (!(current_user_can('level_0'))){ ?>
@@ -55,7 +55,7 @@
 		     		 </a>
 		     	   </div>	   
 		     	</div>-->
-		     	<div id="header-branding-label">The Bearded Buffalo</div>
+		     	<div id="header-branding-label"><a href="<? echo home_url(); ?>">The Bearded Buffalo</a></div>
 		     	<div class="pull-right">
 		     	     <a href="#about" data-href="#about" class="header-menu-item offCanvas-link header-link">About this site<!--<i class="ss-help"></i>--></a>
 		    	</div>

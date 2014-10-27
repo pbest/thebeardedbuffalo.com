@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    
+    <?php if (!(current_user_can('level_0'))){ ?>
     <header class="branding">
         <div class="branding-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo-text.png" /><Br>
@@ -21,19 +21,18 @@
           </div>
     </nav>
     <div class="clearfix"></div>
+    <? } ?>
 
-		<div class="container">
-     <? 
-        $post_count = 0; 
-        $args = array(
-           'numberposts' => 15
-            //, 'orderby' => 'menu_order'
-        );
-        $myposts = get_posts($args);
-        foreach($myposts as $post) :
-          //setup_postdata($post);
-        $post_count++;
-      ?>
+		<div class="container" id="allItems">
+
+    
+ <?php
+$catname = wp_title('', false);
+$wp_query = new WP_Query();
+$wp_query->query('showposts=12'.'&paged='.$paged);
+?>
+
+<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <div class="item" id="<?php echo($post->post_name) ?>" data-trackID="<?php echo($post->ID) ?>" data-mp3="<? the_field('track_mp3'); ?>" data-artist="<? the_field('artist_name'); ?>" data-track="<? the_field('track_name'); ?>" data-image="<?php the_field('track_image'); ?>" style="background-image: url('<?php the_field('track_image'); ?>');">
       <div class="item-wrapper">
         <h3><? the_title(); ?></h3>
@@ -53,12 +52,16 @@
          </div>
       </div>
      </div>
-    <?php endforeach; wp_reset_postdata(); ?>
+  
+
+<?php endwhile; ?>
+
+<?php get_template_part('nav', 'below'); ?>
   </div><!--/.container-->
 
-  <div class="row">
+  <!--<div class="row">
 		<div class="button" id="loadMoreTracks" style="margin:0 auto; width:130px">Load More</div>
-	</div>
+	</div>-->
 	
 	</div>
 <?php get_footer(); ?>
