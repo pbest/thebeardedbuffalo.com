@@ -67,14 +67,13 @@ a {
 h1 {
 	@include serif;
 	line-height: 1.45;
-	font-size: 26px;
+	font-size: 30px;
 	text-align: center;
 	font-style: italic;
 	font-weight: 400;
 	padding-bottom: 12px;
 	color: #fff;
-	opacity: .7;
-	padding-top: 30px;
+	padding-top: 45px;
 	margin: 0 auto;
 	@media screen and (max-width:767px) {
 		font-size: 18px;

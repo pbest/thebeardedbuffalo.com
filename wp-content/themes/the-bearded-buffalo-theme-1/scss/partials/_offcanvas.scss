@@ -26,19 +26,43 @@
 }
 
 .login-form-wrapper {
-	max-width: 550px !important;
+	max-width: 480px !important;
+	padding-top: 10px !important;
 	text-align: center;
+	.signup {
+		display: inline-block;
+		@include serif;
+		@include easing;
+	font-style: italic;
+	font-size: 13px;
+	color: rgb(153, 153, 153);
+	text-decoration: none;
+	padding-top: 10px;
+	}
+	.signup:hover {
+		color: $cyan;
+		@include easing;
+	}
 }
 .login-option {
 	padding-top: 7px;
+	padding-left: 12px;
+	padding-right: 12px;
+	@include serif;
+	font-style: italic;
+	font-size: 13px;
 	color: rgb(153, 153, 153);
 	label {
 		color: rgb(153, 153, 153);
 	}
+
 }
 .login-option a {
 	color: rgb(153, 153, 153);
 	text-decoration: none;
+	@include serif;
+	font-style: italic;
+	font-size: 13px
 }
 .login-button {
 	padding: 12px 55px;

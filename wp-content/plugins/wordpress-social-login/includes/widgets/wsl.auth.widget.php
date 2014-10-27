@@ -136,7 +136,7 @@ function wsl_render_login_form()
 ?>
 
 		<a rel="nofollow" href="<?php echo $authenticate_url; ?>" title="<?php echo sprintf( _wsl__("Connect with %s", 'wordpress-social-login'), $provider_name ) ?>" class="wsl_connect_with_provider wp-social-login-provider wp-social-login-provider-<?php echo strtolower( $provider_id ); ?>" data-provider="<?php echo $provider_id ?>"> 
-			<?php if( $social_icon_set == 'none' ){ echo $provider_name; } else { ?><img alt="<?php echo $provider_name ?>" title="<?php echo sprintf( _wsl__("Connect with %s", 'wordpress-social-login'), $provider_name ) ?>" src="<?php echo $assets_base_url . strtolower( $provider_id ) . '.png' ?>" /><?php } ?>	
+			<?php if( $social_icon_set == 'none' ){ echo "Sign in with "; echo $provider_name; } else { ?><img alt="<?php echo $provider_name ?>" title="<?php echo sprintf( _wsl__("Connect with %s", 'wordpress-social-login'), $provider_name ) ?>" src="<?php echo $assets_base_url . strtolower( $provider_id ) . '.png' ?>" /><?php } ?>	
 		</a>
 
 <?php 

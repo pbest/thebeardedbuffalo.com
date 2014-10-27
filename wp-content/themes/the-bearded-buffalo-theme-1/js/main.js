@@ -153,6 +153,7 @@ var cs = (function($) {
 				},
 				play: function(event) {
 					my_playState.text(opt_text_playing);
+					uiMod.showPlayerControls();
 					//console.log('song played');
 					console.log($(this).find('#track-details').text());
 				},
@@ -178,9 +179,9 @@ var cs = (function($) {
 
 		var showNav = function() {
   			var scrollTop = $(window).scrollTop();
-  		  	if (scrollTop > 570) {
+  		  	if (scrollTop > 70) {
       			$( "#header-wrapper" ).addClass('translateY-0px');
-    		} else if (scrollTop < 570) {
+    		} else if (scrollTop < 70) {
     			 $( "#header-wrapper" ).removeClass('translateY-0px');
    			 }
   		};
@@ -397,6 +398,13 @@ var cs = (function($) {
 			$( "#header-wrapper" ).addClass('translateY-0px');
 		};	
 
+		var showPlayerControls = function() {
+			if($('#player-wrapper').hasClass('translateY-0px')) {
+				return false;
+			} else {
+				$('#player-wrapper').addClass('translateY-0px');
+			}
+		}
 		var toggleAbout = function() {
 			if($('section#about').hasClass('offcanvas-visible')) {
 				$('section#about').removeClass('offcanvas-visible');
@@ -450,6 +458,7 @@ var cs = (function($) {
 			toggleAbout: toggleAbout,
 			toggleUpload: toggleUpload,
 			togglePanel: togglePanel,
+			showPlayerControls: showPlayerControls,
 			showStickyNav: showStickyNav
 		};
 	})(); // var uiMod = (function() {

@@ -23,7 +23,7 @@ input[type=password] {
 
 	input[type=text], 
     input[type=password] {
-    	width: 100%;
+    	width: 94%;
     }
 
 }
@@ -61,6 +61,16 @@ input[type=password] {
 	float: right;
 	clear: none !important;
 }
+#input_2_1 {
+	background: rgba(248,248,248,.0);
+	border: 1px solid #343434;
+	width: 100%;
+	height: 50px;
+	padding-left: 20px;
+	@include sans-serif;
+	text-align: center;
+
+} 
 textarea {
 	width: 100%;
 	height: 100px;
@@ -76,3 +86,93 @@ textarea {
 	margin-bottom: 15px;
 	clear: both;
 }
+
+/*
+==========================================================================
+	LOGIN FORM
+==========================================================================
+*/
+/*
+* Customize 'Connect with:' label
+*/
+.wp-social-login-widget {
+	padding-top: 10px;
+	padding-bottom: 15px;
+
+}
+.wp-social-login-connect-with {
+display: none;
+}
+ 
+.wp-social-login-provider-list { 
+	text-align: center;
+	margin-bottom: 15px; 
+}
+ 
+/*
+* Customize the providers buttons
+*/
+.wp-social-login-provider {
+	width: 215px;
+display: inline-block;
+@include serif;
+font-style: italic;
+padding: 12px;
+margin: 5px;
+font-size: 13px;
+text-align: center;
+text-decoration: none;
+color: #ffffff !important;
+border-radius: 20px;
+}
+ 
+.wp-social-login-provider:before {
+   font-family: "SSSocial";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  padding-right: 7px;
+}
+
+.wp-social-login-provider:hover { color: #ffffff !important; }
+ 
+/*
+* Set the background color for each provider buttons
+*/
+.wp-social-login-provider-facebook { background-color: #3b5998; }
+.wp-social-login-provider-twitter  { background-color: #00acee; }
+.wp-social-login-provider-google   { background-color: #dd4b39; }
+.wp-social-login-provider-instagram    { background-color: #3f729b; }   
+
+
+.wp-social-login-provider-facebook:before {
+	content:'';
+}
+.wp-social-login-provider-twitter:before {
+	content:'';
+}
+.wp-social-login-provider-google:before {
+	content:'';
+}
+.wp-social-login-provider-instagram:before{
+	content:'';
+}
+ 
+/*
+* Changing the background color for each button on mouse hover
+*/
+.wp-social-login-provider-facebook:hover { background-color: #2f4679; }
+.wp-social-login-provider-twitter:hover  { background-color: #0089bd; }
+.wp-social-login-provider-google:hover   { background-color: #b03b2d; } 
+.wp-social-login-provider-yahoo:hover    { background-color: #9652c4; } 
+.wp-social-login-provider-linkedin:hover { background-color: #0b5e85; } 
+.wp-social-login-provider-steam:hover    { background-color: #171515; }

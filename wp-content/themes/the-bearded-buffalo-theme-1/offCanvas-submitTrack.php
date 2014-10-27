@@ -14,6 +14,6 @@
         		  <a class="button pull-right" id="close-form" style="margin-right:5px;">Close ×</a>
       			</div>
      		 </form>-->
-     		 <?php gravity_form("Submit Song", $display_title=false, $display_description=false, $display_inactive=false, $field_values=null, $ajax=false, $tabindex); ?>
+     		 <?php gravity_form("Submit Song", $display_title=false, $display_description=false, $display_inactive=false, $field_values=null, $ajax=true, $tabindex); ?>
     		</div>
 </section>

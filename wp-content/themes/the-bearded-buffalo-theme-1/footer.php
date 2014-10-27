@@ -3,7 +3,7 @@
 		
 		
 
-		<!-- mobile player controls -->
+		<!-- sticky footer player controls -->
 		<section id="player-wrapper">
 		<div id="player-image"><div id="player-image-cover"></div></div>
 		 <div class="row-container">

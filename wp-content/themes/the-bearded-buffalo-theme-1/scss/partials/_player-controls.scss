@@ -72,6 +72,16 @@ MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
 		text-align: center;
 		padding-top: 7px;	
 		z-index: 900;
+		 -webkit-transform: translateY(116px);
+         -moz-transform:    translateY(116px);
+         -ms-transform:     translateY(116px);
+         -o-transform:      translateY(116px);
+         transform:         translateY(116px);
+
+         .button {
+         	-webkit-transform: translateZ(0);
+         	transform: translateZ(0);
+         }
 }
 #player-image {
 	position: absolute;

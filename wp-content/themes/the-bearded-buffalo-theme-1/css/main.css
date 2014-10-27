@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ================================================================== */
 /* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
 /* ================================================================== */
@@ -2275,14 +2276,13 @@ textarea {
 h1 {
   font-family: 'Libre Baskerville', 'Times', serif;
   line-height: 1.45;
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;
   font-style: italic;
   font-weight: 400;
   padding-bottom: 12px;
   color: #fff;
-  opacity: .7;
-  padding-top: 30px;
+  padding-top: 45px;
   margin: 0 auto; }
   @media screen and (max-width: 767px) {
     h1 {
@@ -2454,7 +2454,14 @@ button:hover {
 .button-primary {
   background: #11cfbf;
   border-color: #11cfbf;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 10px 32px;
+  border-radius: 28px; }
+  .button-primary i {
+    padding-right: 15px;
+    position: relative;
+    top: 2px;
+    opacity: .7; }
 
 .button-primary:hover {
   background: transparent !important;
@@ -2577,11 +2584,11 @@ header.branding {
   margin-left: 25px;
   margin-right: 25px;
   text-align: center;
-  height: 560px;
+  height: 550px;
   margin: 0 auto;
   margin-top: 2.2%;
   background-image: url("../img/unsaturated-buffalo-2000x1000.jpg");
-  background-position-y: 83%;
+  background-position-y: 50%;
   background-size: cover;
   /*@media screen and (max-width: 767px) {
   	height: 370px;
@@ -2598,7 +2605,7 @@ header.branding {
 
 header.branding img {
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 50px;
   width: 75%; }
   @media screen and (max-width: 767px) {
     header.branding img {
@@ -2682,14 +2689,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', end
   color: #fff;
   font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
   clear: both;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 25px;
   position: relative;
   left: -13px;
   text-align: center; }
   @media screen and (max-width: 767px) {
     .header-nav {
       display: none; } }
+  .header-nav h4 {
+    padding-top: 0px;
+    font-size: 22px; }
 
 .header-nav img {
   max-width: 140px;
@@ -3091,18 +3101,47 @@ input[type="range"]::-moz-range-thumb:hover {
   margin: 0 auto; }
 
 .login-form-wrapper {
-  max-width: 550px !important;
+  max-width: 480px !important;
+  padding-top: 10px !important;
   text-align: center; }
+  .login-form-wrapper .signup {
+    display: inline-block;
+    font-family: 'Libre Baskerville', 'Times', serif;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    font-style: italic;
+    font-size: 13px;
+    color: #999999;
+    text-decoration: none;
+    padding-top: 10px; }
+  .login-form-wrapper .signup:hover {
+    color: #11cfbf;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out; }
 
 .login-option {
   padding-top: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: 'Libre Baskerville', 'Times', serif;
+  font-style: italic;
+  font-size: 13px;
   color: #999999; }
   .login-option label {
     color: #999999; }
 
 .login-option a {
   color: #999999;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'Libre Baskerville', 'Times', serif;
+  font-style: italic;
+  font-size: 13px; }
 
 .login-button {
   padding: 12px 55px;
@@ -3190,7 +3229,15 @@ MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
   background: #222222;
   text-align: center;
   padding-top: 7px;
-  z-index: 900; }
+  z-index: 900;
+  -webkit-transform: translateY(116px);
+  -moz-transform: translateY(116px);
+  -ms-transform: translateY(116px);
+  -o-transform: translateY(116px);
+  transform: translateY(116px); }
+  #player-wrapper .button {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
 
 #player-image {
   position: absolute;
@@ -3290,7 +3337,7 @@ input[type=password] {
 
 .login-form-wrapper input[type=text],
 .login-form-wrapper input[type=password] {
-  width: 100%; }
+  width: 94%; }
 
 .fieldgroup .matcher {
   line-height: 40px; }
@@ -3326,6 +3373,15 @@ input[type=password] {
   float: right;
   clear: none !important; }
 
+#input_2_1 {
+  background: rgba(248, 248, 248, 0);
+  border: 1px solid #343434;
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+  text-align: center; }
+
 textarea {
   width: 100%;
   height: 100px;
@@ -3340,6 +3396,108 @@ textarea {
   margin-top: 20px;
   margin-bottom: 15px;
   clear: both; }
+
+/*
+==========================================================================
+	LOGIN FORM
+==========================================================================
+*/
+/*
+* Customize 'Connect with:' label
+*/
+.wp-social-login-widget {
+  padding-top: 10px;
+  padding-bottom: 15px; }
+
+.wp-social-login-connect-with {
+  display: none; }
+
+.wp-social-login-provider-list {
+  text-align: center;
+  margin-bottom: 15px; }
+
+/*
+* Customize the providers buttons
+*/
+.wp-social-login-provider {
+  width: 215px;
+  display: inline-block;
+  font-family: 'Libre Baskerville', 'Times', serif;
+  font-style: italic;
+  padding: 12px;
+  margin: 5px;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff !important;
+  border-radius: 20px; }
+
+.wp-social-login-provider:before {
+  font-family: "SSSocial";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  padding-right: 7px; }
+
+.wp-social-login-provider:hover {
+  color: #ffffff !important; }
+
+/*
+* Set the background color for each provider buttons
+*/
+.wp-social-login-provider-facebook {
+  background-color: #3b5998; }
+
+.wp-social-login-provider-twitter {
+  background-color: #00acee; }
+
+.wp-social-login-provider-google {
+  background-color: #dd4b39; }
+
+.wp-social-login-provider-instagram {
+  background-color: #3f729b; }
+
+.wp-social-login-provider-facebook:before {
+  content: ''; }
+
+.wp-social-login-provider-twitter:before {
+  content: ''; }
+
+.wp-social-login-provider-google:before {
+  content: ''; }
+
+.wp-social-login-provider-instagram:before {
+  content: ''; }
+
+/*
+* Changing the background color for each button on mouse hover
+*/
+.wp-social-login-provider-facebook:hover {
+  background-color: #2f4679; }
+
+.wp-social-login-provider-twitter:hover {
+  background-color: #0089bd; }
+
+.wp-social-login-provider-google:hover {
+  background-color: #b03b2d; }
+
+.wp-social-login-provider-yahoo:hover {
+  background-color: #9652c4; }
+
+.wp-social-login-provider-linkedin:hover {
+  background-color: #0b5e85; }
+
+.wp-social-login-provider-steam:hover {
+  background-color: #171515; }
 
 /*
 ==========================================================================

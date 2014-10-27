@@ -5,20 +5,21 @@
         <div class="branding-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo-text.png" /><Br>
             <h1>Discover new tracks reviewed in five words</h1>
-            <a class="button button-primary" href="#" id="call-to-action"><i class="ss-icon">play</i> Listen Now</a>
+            <a class="button button-primary" href="#" id="call-to-action"><i class="ss-music"></i>Start Listening</a>
           </div>
     </header>
 
     <nav class="header-nav" id="headerheader">
-          <div class="header-nav--block block-left">
-          <a id="nav-play" href="#" class="nav-item">Listen <i class="ss-icon">music</i></a>
-             <a href="#" class="nav-item about">About</a>            
-          </div>
-          <a href="#" class="nav-item--home"><img src="<?php echo get_template_directory_uri(); ?>/img/buffalo.png" /></a>
-          <div class="header-nav--block block-right">
-              <a href="http://therealbeardedbuffalo.tumblr.com/" target="new" class="nav-item">Blog</a>
-              <a class="nav-item upload">Submit</a>
-          </div>
+         <!--<div class="header-nav--block block-left">
+          <a id="nav-play" href="#" class="nav-item offCanvas-link favorites" data-href="#favorites">Favorites</a>
+             <a href="#" class="nav-item offCanvas-link" data-href="#inboxSignup">Get New Tracks</a>            
+          </div>-->
+          <!--<a href="#" class="nav-item--home"><img src="<?php echo get_template_directory_uri(); ?>/img/buffalo.png" /></a>-->
+          <h4>Latest Tracks</h4>
+          <!--<div class="header-nav--block block-right">
+              <a href="#" class="nav-item offCanvas-link" data-href="#about">About</a>
+              <a class="nav-item offCanvas-link" data-href="#submitTrack">Submit Track</a>
+          </div>-->
     </nav>
     <div class="clearfix"></div>
     <? } ?>

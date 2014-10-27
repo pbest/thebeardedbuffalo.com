@@ -90,6 +90,15 @@ button:hover {
 	background: #11cfbf;
 	border-color: #11cfbf;
 	text-decoration: none;
+	padding: 10px 32px;
+	border-radius: 28px;
+
+	i {
+		padding-right: 15px;
+		position: relative;
+		top: 2px;
+		opacity: .7;
+	}
 }
 .button-primary:hover {
 	background: transparent !important;
