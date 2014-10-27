@@ -2929,6 +2929,23 @@ hr {
   transition: all .7s;
   -webkit-transition: all .7s; }
 
+#allItems .wpfp-span {
+  opacity: 0;
+  transition: all .7s;
+  -webkit-transition: all .7s; }
+
+#allItems .item:hover .wpfp-span {
+  opacity: 1;
+  transition: all .7s;
+  -webkit-transition: all .7s; }
+
+.wpfp-link {
+  font-size: 15px;
+  font-style: italic;
+  font-family: 'Libre Baskerville';
+  color: #fff;
+  text-decoration: none; }
+
 .item img {
   max-width: 100%;
   opacity: .9;
@@ -3042,70 +3059,6 @@ input[type="range"]::-moz-range-thumb:hover {
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out; }
 
-.fieldgroup {
-  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif; }
-
-input[type=text],
-input[type=password] {
-  width: 47%;
-  height: 40px;
-  background: rgba(248, 248, 248, 0);
-  border: 1px solid #343434;
-  text-align: center;
-  font-family: 'Lato';
-  letter-spacing: 1px;
-  font-size: 20px;
-  font-weight: 200; }
-
-.fieldgroup .matcher {
-  line-height: 40px; }
-
-/* GRAVITY FORMS STYLE OVERRIDES */
-#field_1_1 {
-  width: 49%;
-  float: left;
-  margin-right: 7px;
-  clear: none !important; }
-
-#input_1_1 {
-  width: 100%; }
-
-#field_1_2 {
-  width: 49%;
-  float: left;
-  margin-left: 7px !important;
-  clear: none !important; }
-
-#input_1_2 {
-  width: 100%; }
-
-#field_1_4 {
-  width: 48%;
-  float: left;
-  clear: none; }
-
-#input_1_4 {
-  width: 100%; }
-
-.gform_footer {
-  float: right;
-  clear: none !important; }
-
-textarea {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  font-family: 'Lato';
-  letter-spacing: 1px;
-  font-size: 20px;
-  font-weight: 200;
-  background: rgba(248, 248, 248, 0);
-  border: 1px solid #343434;
-  padding-top: 30px;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  clear: both; }
-
 .offCanvasPanel {
   position: fixed;
   left: 0;
@@ -3136,6 +3089,26 @@ textarea {
   max-width: 900px;
   padding-top: 25px;
   margin: 0 auto; }
+
+.login-form-wrapper {
+  max-width: 550px !important;
+  text-align: center; }
+
+.login-option {
+  padding-top: 7px;
+  color: #999999; }
+  .login-option label {
+    color: #999999; }
+
+.login-option a {
+  color: #999999;
+  text-decoration: none; }
+
+.login-button {
+  padding: 12px 55px;
+  border-radius: 30px;
+  font-size: 18px;
+  margin-top: 35px; }
 
 .panel-container p {
   max-width: 900px;
@@ -3300,6 +3273,74 @@ PLAYER CONTROLS - generic to mobile and desktop
 	GRAVITY FORMS (scss/partials/_gravity-forms.scss)
 ==========================================================================
 */
+.fieldgroup {
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif; }
+
+input[type=text],
+input[type=password] {
+  width: 47%;
+  height: 40px;
+  background: rgba(248, 248, 248, 0);
+  border: 1px solid #343434;
+  text-align: center;
+  font-family: 'Lato';
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 200; }
+
+.login-form-wrapper input[type=text],
+.login-form-wrapper input[type=password] {
+  width: 100%; }
+
+.fieldgroup .matcher {
+  line-height: 40px; }
+
+/* GRAVITY FORMS STYLE OVERRIDES */
+#field_1_1 {
+  width: 49%;
+  float: left;
+  margin-right: 7px;
+  clear: none !important; }
+
+#input_1_1 {
+  width: 100%; }
+
+#field_1_2 {
+  width: 49%;
+  float: left;
+  margin-left: 7px !important;
+  clear: none !important; }
+
+#input_1_2 {
+  width: 100%; }
+
+#field_1_4 {
+  width: 48%;
+  float: left;
+  clear: none; }
+
+#input_1_4 {
+  width: 100%; }
+
+.gform_footer {
+  float: right;
+  clear: none !important; }
+
+textarea {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-family: 'Lato';
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 200;
+  background: rgba(248, 248, 248, 0);
+  border: 1px solid #343434;
+  padding-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  clear: both; }
+
 /*
 ==========================================================================
 	PRINT STYLES [print]

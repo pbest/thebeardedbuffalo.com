@@ -24,6 +24,28 @@
 	padding-top: 25px;
 	margin: 0 auto;
 }
+
+.login-form-wrapper {
+	max-width: 550px !important;
+	text-align: center;
+}
+.login-option {
+	padding-top: 7px;
+	color: rgb(153, 153, 153);
+	label {
+		color: rgb(153, 153, 153);
+	}
+}
+.login-option a {
+	color: rgb(153, 153, 153);
+	text-decoration: none;
+}
+.login-button {
+	padding: 12px 55px;
+border-radius: 30px;
+font-size: 18px;
+margin-top: 35px;
+}
 .panel-container p {
 	max-width: 900px;
 	text-align: left !important;

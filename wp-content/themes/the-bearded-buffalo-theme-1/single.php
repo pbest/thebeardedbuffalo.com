@@ -9,6 +9,7 @@
         	</div>
         	<div class="pull-left">
        		<h1><? the_title(); ?></h1>
+          <?php wpfp_link() ?> 
        		</div>
        	</div>
     </header>

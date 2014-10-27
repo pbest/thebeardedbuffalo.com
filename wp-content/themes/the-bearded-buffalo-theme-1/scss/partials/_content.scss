@@ -201,6 +201,24 @@ hr {
 			transition: all .7s;
 -webkit-transition: all .7s;
 }
+
+#allItems .wpfp-span {
+	opacity: 0;
+	transition: all .7s;
+-webkit-transition: all .7s;
+}
+#allItems .item:hover .wpfp-span {
+	opacity: 1;
+	transition: all .7s;
+-webkit-transition: all .7s;
+}
+.wpfp-link {
+	font-size: 15px;
+	font-style: italic;
+	font-family: 'Libre Baskerville';
+	color: #fff;
+	text-decoration: none;
+}
 .item img {
 	max-width: 100%;
 	opacity: .9;
@@ -315,67 +333,3 @@ input[type="range"]::-moz-range-thumb:hover {
 
 
 
-.fieldgroup {
-	@include sans-serif;
-}
-input[type=text], 
-input[type=password] {
-	width: 47%;
-	height: 40px;
-	background: rgba(248,248,248,.0);
-	border: 1px solid #343434;
-	text-align: center;
-	font-family: 'Lato';
-	letter-spacing: 1px;
-	font-size: 20px;
-	font-weight: 200;
-}
-.fieldgroup .matcher {
-	line-height: 40px;
-}
-/* GRAVITY FORMS STYLE OVERRIDES */
-#field_1_1 {
-	width: 49%;
-	float: left;
-	margin-right: 7px;
-	clear: none !important;
-}
-#input_1_1 {
-	width: 100%;
-}
-#field_1_2 {
-	width: 49%;
-	float: left;
-	margin-left: 7px !important;
-	clear: none !important;
-}
-#input_1_2 {
-	width: 100%;
-}
-#field_1_4 {
-	width: 48%;
-	float: left;
-	clear: none;
-}
-#input_1_4 {
-	width: 100%;
-}
-.gform_footer {
-	float: right;
-	clear: none !important;
-}
-textarea {
-	width: 100%;
-	height: 100px;
-	text-align: center;
-	font-family: 'Lato';	
-	letter-spacing: 1px;
-	font-size: 20px;
-	font-weight: 200;
-	background: rgba(248,248,248,.0);
-	border: 1px solid #343434;
-	padding-top: 30px;
-	margin-top: 20px;
-	margin-bottom: 15px;
-	clear: both;
-}
