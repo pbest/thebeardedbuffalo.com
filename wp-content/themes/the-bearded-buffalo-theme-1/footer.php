@@ -2,6 +2,27 @@
 		
 		
 		
+<div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-content">
+    <div class="pull-right"> <i class="md-close ss-delete"></i></div>
+        <h4 id="shareText">How do you want to share song name?</h4>
+        
+        <div>
+           <ul class="md-icon-gallery">
+           <li><a href="#" id="copyLink"><i class="ss-icon ss-link"></i><br>Copy Link</a></li>
+           <li><a href="#" id="emailShare"><i class="ss-icon ss-mail"></i><br>Email</a></li>
+           
+           <li><a href="#" id="facebookShare" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" title="Share on Facebook"><i class="ss-icon ss-social ss-facebook"></i><br>Facebook</a></li>
+           <li><a href="#" id="twitterShare" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" title="Share on Twitter"><i class="ss-icon ss-social ss-twitter"></i><br>Twitter</a></li>
+           </ul>
+           <p id="copyLinkcontents"></p>
+        </div>
+    </div>
+</div>
+<div class="md-overlay"></div>
+
 
 		<!-- sticky footer player controls -->
 		<section id="player-wrapper">
@@ -25,14 +46,13 @@
 
 	     	</div>
 	     	<div id="active-track">
-
-			      	<h6 id="active-track-name"></h6>
-			     	<!--<div id="play-info">(<span id="current-time"></span>&nbsp;of&nbsp;<span id="duration"></span>)</div>-->	
-		     	</div>
+		      	<h6 id="active-track-name"></h6>
+		     	<div id="play-info">(<span id="current-time"></span>&nbsp;of&nbsp;<span id="duration"></span>)</div>
+		     </div>
 
 		    <div class="pull-right">
 		    <div class="button"><i class="ss-icon">heart</i>&nbsp;&nbsp;Save to favorites</div>
-				<div class="button"><i class="ss-icon">share</i>&nbsp;&nbsp;Share track</div>
+				<div class="button md-trigger" data-modal="modal-1"><i class="ss-icon">share</i>&nbsp;&nbsp;Share track</div>
 			</div>
 			</div>
 		</section>
@@ -69,6 +89,8 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/conditionizr.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.jplayer.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.velocity.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/classie.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modalEffects.js"></script>
 		<!--<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/60fps-scroll.js"></script>-->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 

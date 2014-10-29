@@ -112,6 +112,9 @@ var cs = (function($) {
 			$('.playpause').click(function() { cs.track.spaceBar(); });
 			$('.skipforward').click(function() { cs.track.nextTrack(); });
 			$('.skipback').click(function() { cs.track.previousTrack(); });
+			//$('#copyLink').click(function() { 
+			//	$('#copyLink').toggleClass('max-height-visible');
+			//});
 
 			
 			// KEYSTROKE EVENTS FOR TRACK SKIPPING AND PLAY/PAUSE
@@ -155,7 +158,7 @@ var cs = (function($) {
 					my_playState.text(opt_text_playing);
 					uiMod.showPlayerControls();
 					//console.log('song played');
-					console.log($(this).find('#track-details').text());
+					//console.log($(this).find('#track-details').text());
 				},
 				pause: function(event) {
 					my_playState.text(opt_text_selected);
@@ -170,7 +173,7 @@ var cs = (function($) {
 					cs.track.nextTrack();
 				},
 				swfPath: "http://thebeardedbuffalo.com/wp-content/themes/the-bearded-buffalo-theme-1/js/vendor",
-				cssSelectorAncestor: "#header-wrapper",
+				cssSelectorAncestor: "#player-wrapper",
 				supplied: "m4a,mp3",
 				keys: true,	
 				wmode: "window"
@@ -343,6 +346,19 @@ var cs = (function($) {
 					$newAffordanceButton = e.find('.item--play');
 					$newAffordanceButton.html('<i class="ss-pause"></i>').addClass('viewable'); 
 					$('.playpause').html('<i class="ss-pause"></i>');
+
+					//update Share modal content
+					console.log('test');
+					console.log($('#shareText').text());
+					facebookShareURL = "https://www.facebook.com/sharer/sharer.php?u=http://thebeardedbuffalo.com/track/"+e.data("trackid")+"&t=Check+out+this+track+I+found+on+The+Bearded+Buffalo";
+					twitterShareURL = "https://twitter.com/share?url=http://thebeardedbuffalo.com/track/"+e.data("trackid")+"&via=bearded_buffalo&text=Check+out+this+track+I+found+on+The+Bearded+Buffalo";
+					mailtoURL = "mailto:?body=http://thebeardedbuffalo.com/track/"+e.data("trackid")+"&subject=Check+out+this+track+I+found+on+The+Bearded+Buffalo"
+					//copylinkContents = ""
+
+					$('#shareText').text("How do you want to share this track by "+e.data("artist")+"?");
+					$('#facebookShare').attr('href',facebookShareURL);
+					$('#twitterShare').attr('href',twitterShareURL);
+					$('#emailShare').attr('href',mailtoURL);
 				}
 				
 				isPlaying = true;
@@ -462,7 +478,6 @@ var cs = (function($) {
 			showStickyNav: showStickyNav
 		};
 	})(); // var uiMod = (function() {
-
 
 
 	/* 

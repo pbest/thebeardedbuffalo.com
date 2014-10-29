@@ -1,5 +1,12 @@
+/*
+==========================================================================
+	SLIDING PANELS
+==========================================================================
+*/
+
 .offCanvasPanel {
 	//display: none;
+	box-shadow: 0 1px 5px rgba(0,0,0,.3);
 	position: fixed;
 	left: 0;
 	top: -100%;
@@ -14,11 +21,17 @@
 }
 .offcanvas-visible {
 	//display: block;
+	
 	@include easing;
 	top: 0px !important;
 	visibility: visible !important;
 }
-
+#submitTrack {
+	height: 550px !important;
+}
+#inboxSignup {
+	height: 455px !important;
+}
 .panel-container {
 	max-width: 900px;
 	padding-top: 25px;
@@ -83,6 +96,112 @@ margin-top: 35px;
 
 #form--wrapper {
 	padding-top: 20px;
-	max-width: 900px;
+	max-width: 55%;
 	margin: 0 auto;
+	p {
+		max-width: 450px;
+		color: #999;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+}
+
+/*
+==========================================================================
+	MODAL WINDOW
+==========================================================================
+*/
+.md-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 630px;
+    min-width: 320px;
+    height: auto;
+    z-index: 2000;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+
+    h4 {
+    	padding-top: 45px;
+    	padding-bottom: 15px;
+    	font-size: 22px;
+    }
+
+}
+.md-close {
+	@include easing;
+	padding: 10px;
+	color: #bbb;
+}
+.md-close:hover {
+	cursor: pointer;
+	opacity: .7;
+	@include easing;
+}
+.md-show {
+    visibility: visible;
+}
+ 
+.md-overlay {
+	display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    opacity: 0;
+    background: rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+ 
+.md-show ~ .md-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.md-effect-1 .md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	 background: rgba(239,243,242,.96);
+	 box-shadow: 0 1px 5px rgba(0,0,0,.9);
+	  padding: 20px;
+}
+
+.md-show.md-effect-1 .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.md-icon-gallery {
+	width: 80%;
+	margin: 0 auto;
+	overflow: auto;
+	padding-left: 0;
+	padding-bottom: 30px;
+	li {
+		float: left;
+		width: 25%;
+		text-align: center;
+		a {
+			font-size: 14px;
+			color: #777;
+			text-decoration: none;
+		}
+		i {
+			font-size: 300%;
+			color: $cyan;
+		}
+	}
 }

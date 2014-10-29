@@ -65,7 +65,7 @@ MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
  #player-wrapper {
 		display: block;
 		position: fixed;
-		height: 78px;
+		height: 100px;
 		width: 100%;
 		bottom: 0;
 		background: $darkgray;
@@ -86,7 +86,7 @@ MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
 #player-image {
 	position: absolute;
 	width: 100%;
-	height: 78px;
+	height: 100px;
 	background-size: cover !important;
 		background-position: center center !important;
 		-webkit-filter: blur(50px);
@@ -108,6 +108,7 @@ PLAYER CONTROLS - generic to mobile and desktop
 .player-control {
 	display: inline-block;
 	color: $white-40;
+	margin-right: 15px;
 	@include easing;
 }
 .player-control:hover {
@@ -116,11 +117,11 @@ PLAYER CONTROLS - generic to mobile and desktop
 	@include easing;
 }
 .skipback {
-	margin-left: 5px;
-	margin-right: 5px;
+	//margin-left: 5px;
+	//margin-right: 5px;
 }
 .skipforward {
-	margin-left: 5px;
+//	margin-left: 5px;
 }
 .volume {
 	display: block !important;

@@ -15,6 +15,7 @@
 	background: rgba(34,34,34,1);
 	transition: all 250ms;
     -webkit-transition: all 250ms;
+    box-shadow: 0 1px 5px rgba(0,0,0,.5);
     //initial position
     @media screen and (min-width: 768px) {
          -webkit-transform: translateY(-116px);

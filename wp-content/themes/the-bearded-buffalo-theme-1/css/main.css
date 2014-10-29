@@ -2490,7 +2490,8 @@ button.secondary {
   z-index: 9999;
   background: #222222;
   transition: all 250ms;
-  -webkit-transition: all 250ms; }
+  -webkit-transition: all 250ms;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
   @media screen and (min-width: 768px) {
     #header-wrapper {
       -webkit-transform: translateY(-116px);
@@ -3069,7 +3070,13 @@ input[type="range"]::-moz-range-thumb:hover {
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out; }
 
+/*
+==========================================================================
+	SLIDING PANELS
+==========================================================================
+*/
 .offCanvasPanel {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   position: fixed;
   left: 0;
   top: -100%;
@@ -3094,6 +3101,12 @@ input[type="range"]::-moz-range-thumb:hover {
   transition: all 250ms ease-in-out;
   top: 0px !important;
   visibility: visible !important; }
+
+#submitTrack {
+  height: 550px !important; }
+
+#inboxSignup {
+  height: 455px !important; }
 
 .panel-container {
   max-width: 900px;
@@ -3161,8 +3174,111 @@ input[type="range"]::-moz-range-thumb:hover {
 
 #form--wrapper {
   padding-top: 20px;
-  max-width: 900px;
+  max-width: 55%;
   margin: 0 auto; }
+  #form--wrapper p {
+    max-width: 450px;
+    color: #999;
+    margin: 0 auto;
+    padding-bottom: 10px; }
+
+/*
+==========================================================================
+	MODAL WINDOW
+==========================================================================
+*/
+.md-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%); }
+  .md-modal h4 {
+    padding-top: 45px;
+    padding-bottom: 15px;
+    font-size: 22px; }
+
+.md-close {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  padding: 10px;
+  color: #bbb; }
+
+.md-close:hover {
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out; }
+
+.md-show {
+  visibility: visible; }
+
+.md-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 600;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s; }
+
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible; }
+
+.md-effect-1 .md-content {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  background: rgba(239, 243, 242, 0.96);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+  padding: 20px; }
+
+.md-show.md-effect-1 .md-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1; }
+
+.md-icon-gallery {
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+  padding-left: 0;
+  padding-bottom: 30px; }
+  .md-icon-gallery li {
+    float: left;
+    width: 25%;
+    text-align: center; }
+    .md-icon-gallery li a {
+      font-size: 14px;
+      color: #777;
+      text-decoration: none; }
+    .md-icon-gallery li i {
+      font-size: 300%;
+      color: #11cfbf; }
 
 /* ====================
 ITEM (TRACK LISTING) PLAYER CONTROLS 
@@ -3223,7 +3339,7 @@ MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
 #player-wrapper {
   display: block;
   position: fixed;
-  height: 78px;
+  height: 100px;
   width: 100%;
   bottom: 0;
   background: #222222;
@@ -3242,7 +3358,7 @@ MOBILE PLAYER CONTROLS - specific to mobile player - in its own section
 #player-image {
   position: absolute;
   width: 100%;
-  height: 78px;
+  height: 100px;
   background-size: cover !important;
   background-position: center center !important;
   -webkit-filter: blur(50px);
@@ -3263,6 +3379,7 @@ PLAYER CONTROLS - generic to mobile and desktop
 .player-control {
   display: inline-block;
   color: rgba(255, 255, 255, 0.4);
+  margin-right: 15px;
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
   -ms-transition: all 250ms ease-in-out;
@@ -3277,13 +3394,6 @@ PLAYER CONTROLS - generic to mobile and desktop
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out; }
-
-.skipback {
-  margin-left: 5px;
-  margin-right: 5px; }
-
-.skipforward {
-  margin-left: 5px; }
 
 .volume {
   display: block !important; }
@@ -3320,6 +3430,11 @@ PLAYER CONTROLS - generic to mobile and desktop
 	GRAVITY FORMS (scss/partials/_gravity-forms.scss)
 ==========================================================================
 */
+::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px; }
+
 .fieldgroup {
   font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif; }
 
@@ -3334,6 +3449,10 @@ input[type=password] {
   letter-spacing: 1px;
   font-size: 20px;
   font-weight: 200; }
+  input[type=text]:focus,
+  input[type=password]:focus {
+    outline: 0;
+    border-color: #11cfbf; }
 
 .login-form-wrapper input[type=text],
 .login-form-wrapper input[type=password] {
@@ -3344,7 +3463,7 @@ input[type=password] {
 
 /* GRAVITY FORMS STYLE OVERRIDES */
 #field_1_1 {
-  width: 49%;
+  width: 47%;
   float: left;
   margin-right: 7px;
   clear: none !important; }
@@ -3353,7 +3472,7 @@ input[type=password] {
   width: 100%; }
 
 #field_1_2 {
-  width: 49%;
+  width: 47%;
   float: left;
   margin-left: 7px !important;
   clear: none !important; }
@@ -3369,8 +3488,10 @@ input[type=password] {
 #input_1_4 {
   width: 100%; }
 
+#field_1_5 {
+  float: left; }
+
 .gform_footer {
-  float: right;
   clear: none !important; }
 
 #input_2_1 {
@@ -3381,6 +3502,10 @@ input[type=password] {
   padding-left: 20px;
   font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
   text-align: center; }
+
+#input_2_1:focus {
+  outline: 0;
+  border-color: #11cfbf; }
 
 textarea {
   width: 100%;
@@ -3396,6 +3521,9 @@ textarea {
   margin-top: 20px;
   margin-bottom: 15px;
   clear: both; }
+  textarea:focus {
+    outline: 0;
+    border-color: #11cfbf; }
 
 /*
 ==========================================================================
